@@ -1,0 +1,10 @@
+name = "Anonymous login"
+description = "Specify pages that when visited by anonymous users will be forced to login"
+core = "7.x" 
+
+; Information added by drupal.org packaging script on 2012-08-31
+version = "7.x-1.0"
+core = "7.x"
+project = "anonymous_login"
+datestamp = "1346439131"
+

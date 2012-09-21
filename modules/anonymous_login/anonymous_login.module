@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function anonymous_login_menu() {
+  $items = array();
+  $items['admin/config/system/anonymous-login'] = array(
+    'title' => 'Anonymous login',
+    'description' => 'Specify pages that force anonyous users to login',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('anonymous_login_admin_settings'),
+    'access arguments' => array('administer site configuration'),
+    'file' => 'anonymous_login.admin.inc',
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_init().
+ */
+function anonymous_login_init() {
+  // Check if user is anonymous
+  if (user_is_anonymous()) {
+    $redirect = FALSE;
+    
+    // Fetch paths to force login
+    if ($paths = variable_get('anonymous_login_paths', NULL)) {
+      // Determine the current path
+      $path = drupal_strtolower($_GET['q']);
+      // See if we have a match
+      if (drupal_match_path($path, $paths)) {
+        $redirect = TRUE;
+      }
+      // Check aliases
+      else {
+        $alias = strtolower(drupal_get_path_alias($_GET['q']));
+        if (drupal_match_path($alias, $paths)) {
+          $redirect = TRUE;
+        }
+      }
+    }
+    
+    // Redirect to the login, keeping the requested path
+    if ($redirect) {
+      drupal_goto('user/login', array('query' => array('destination' => $_GET['q'])));
+    }
+  }
+}

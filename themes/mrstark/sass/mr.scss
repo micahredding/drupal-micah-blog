@@ -1,0 +1,325 @@
+$upBlack:#333333; 
+$downGrey:#666666;
+$darkGrey:$downGrey;
+$midGrey:#999999;
+$upGrey:#CCCCCC;
+$downWhite:#EEEEEE;
+
+$black:#000000;
+$grey:$midGrey;
+$white:#FFFFFF;
+
+@mixin Serif {font-family: Georgia, "Times New Roman", sans-serif;}
+@mixin SanSerif {font-family: Arial, sans-serif;}
+@mixin Center {margin:0 auto;}
+@mixin FullWidth {width:960px;}
+
+@mixin H1 {font-size:78px;}
+@mixin H2 {font-size:36px;}
+@mixin H3 {font-size:18px;}
+@mixin Body {font-size:12px;}
+
+
+/* HEADER */
+#header {margin:0; padding:0; background:none; }
+#page {background:none;}
+#page-wrapper {background:none;}
+
+#topbar {
+  position:absolute; 
+  top:0; 
+  left:0; 
+  height:70px; 
+
+  a {
+    font-style: normal; 
+    text-transform: lowercase; 
+    text-decoration: none; 
+    @include SanSerif; 
+    @include H3;
+  }
+
+  .region,
+  .region a {
+    color:$black; 
+    @include H3;
+  }
+  .block {
+    float:left; 
+    margin-right:20px;
+  }
+
+  #name-and-slogan {
+    float:left; 
+    padding:15px 20px; 
+    margin:0 20px 0px 10px; 
+    background:$upBlack;
+    background:$darkGrey;
+    font-style: normal; 
+    text-transform: lowercase; 
+    color:$white; 
+    text-decoration: none; 
+    @include SanSerif; 
+    @include H3;
+
+    #site-name,
+    #site-name strong,
+    #site-name strong a,
+    #site-slogan {
+      font-style: normal; 
+      text-transform: lowercase; 
+      color:$white; 
+      text-decoration: none; 
+      @include SanSerif; 
+      @include H3;    
+    }
+
+  }
+  
+  #navigation a {
+    color:$black; 
+    @include H3;
+    &:hover {color:$midGrey;}
+  }
+  
+}
+
+.toolbar #topbar {
+  top:65px;
+}
+
+body {background:$white;}
+body.theology #header {margin-top:80px;}
+body.front #header {margin-top:30px;}
+body.life #header {margin-top:80px;}
+
+hr {
+  border:none; 
+  border-bottom:solid thin $downWhite; 
+  margin:10px 60px 10px 0px;
+}
+
+
+#header {
+  margin-top:80px; 
+  margin-bottom:20px;
+
+  h1.section {
+    @include H1;
+    @include Serif;   
+    line-height:1em; 
+    text-transform: none; 
+  }
+  h1.section a {
+    color:$black; 
+    text-decoration: none;
+  }
+  .region-header .block {float:none;}
+  .section {margin:0;}
+}
+
+#header > .section {
+  @include Center; 
+  @include FullWidth;
+}
+
+
+#highlighted {
+  background:$downWhite; 
+  color:$downGrey; 
+  padding:20px 20px; 
+  border-bottom:none; 
+  font-size:36px;
+  a { color:$midGrey; }
+  div, p {margin:0;}
+  .region {
+    @include Center; 
+    @include FullWidth; 
+    padding:0px 20px; 
+    text-align: center;
+  }
+}
+
+
+/* LAYOUT */
+body {margin:0; padding:0;}
+body.sidebar-second {
+  #content {width:75%;}
+  #sidebar-second {width:25%;}
+}
+
+#main-wrapper {
+  @include Center; 
+  max-width:960px;
+}
+
+.sidebar #block-views-slideshow-block {
+  margin:0 0 10px; 
+  padding:0; 
+  border:none;
+}
+
+.content {font-size:1.071em;}
+
+/* BLOCKS */
+#content .block-block {
+  border: 1px solid;
+  padding: 15px 20px;
+  margin: 0 0 20px;
+}
+#content .block-block h2 {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.2;
+}
+#content .block-block .content {
+  line-height: 1.4;
+}
+
+#content .block-block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+
+#block-block-24 {background:none;}
+#block-block-22 .content a {
+  margin-right:40px; 
+  display:block; 
+  float:left;
+}
+
+.not-front #content #block-block-9 {
+  background:none; 
+  border:none; 
+  padding:0px;
+}
+
+.blockinset {
+  background:$downWhite; 
+  margin:20px 0px; 
+  padding:20px 20px 10px;
+}
+
+
+.node .field-type-image {
+  float:left; 
+  margin-right:20px;
+}
+
+
+
+#topbar {width:100%;}
+#topbar #block-block-15 {float:left;}
+#topbar #block-block-16,
+#topbar #block-block-17 {
+  float:right; 
+  margin:0px 10px 0 0; 
+  padding:0 13px 7px; 
+  border-radius:0 0 15px 15px;
+}
+
+#topbar #mc_embed_signup form {
+  padding:0px 0px 0px 0px !important; 
+  margin:0px 0px; 
+  width:459px;
+  
+  label {
+    display:inline-block; 
+    margin-right:10px; 
+    color:$downGrey;
+    margin-top:1px;
+  }
+  
+  div {
+    display:inline-block; 
+    width:180px;
+    width:100px !important; 
+    float:right;
+  }
+
+  div input.button {
+    width:100px !important; 
+    margin-bottom:0px; 
+    vertical-align:middle;
+    margin-top:1px; 
+    display:inline-block; 
+    width:180px;
+  }
+
+  input.email {
+    display:inline-block;  
+    width:170px !important; 
+    margin-bottom:0px; 
+    margin-right:0px;
+  }
+  
+}
+
+
+
+
+
+#main #content > .section {margin-right:30px;}
+
+/* MAILCHIMP */
+#sidebar-second #mc_embed_signup {
+  clear:left;
+  @include Body; 
+  @include SanSerif; 
+  padding:0 !important; 
+  margin-bottom:30px;
+  
+  form {padding:0 !important;}
+}
+
+
+#footer {
+  @include Body;
+  background: black; 
+  padding:20px; 
+  color:white;
+  
+  a {color:white;}
+  .section {
+    @include Center; 
+    @include FullWidth;
+  }
+  
+  .block-views {
+    width:23%; 
+    margin-right:10px; 
+    float:left; 
+    clear:none;
+  }
+
+  #block-search-form {
+    float:left; 
+    width:23%; 
+    clear:right;
+  }
+  
+  #block-views-list-of-taxonomy-block-1 {width:12%;}
+  #block-views-list-of-taxonomy-block-2 {width:30%;}
+  .end {clear:both;}
+}
+
+
+/* defunct */
+.view-frontpage .views-row {
+  margin-bottom:15px;
+  .views-field-body {font-style: italic;}
+}
+
+a.chimp-button,
+.chimp-button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; 
+    display: block; 
+    font-size:15px; 
+    font-weight: bold; 
+    font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+    height: 32px; 
+    line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+
+a.chimp-button:hover,
+.chimp-button:hover {background-color:#777777;}

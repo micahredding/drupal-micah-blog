@@ -1,0 +1,128 @@
+/*
+.content a, 
+.content a:link {color:#999;}
+.content a:visited {color:#999;}
+.content a:hover {color:#555555}
+.content a:active {color:#666666}
+*/
+
+/* .node .content a:visited {color:#0000AA;} */
+
+/* POST */
+/*
+.submitted,
+.submitted a {font-size:12px; font-style: italic;}
+*/
+
+/* HEADER */
+#header {margin:0; padding:0; background:none; }
+#page {background:none;}
+#page-wrapper {background:none;}
+#main {margin-left:20px; margin-right:20px;}
+
+#header #name-and-slogan {float:left; padding:20px 20px; background:#AAA;}
+#header #navigation      {float:left; padding:0px 20px;}
+#header .region-header   {float:left; padding:15px 20px;}
+#header #navigation .section {float:left;}
+
+
+#header #name-and-slogan {background:#666;}
+#header .region, 
+#header .region a {color:#000; font-size:18px;}
+#header #navigation a {color:#000; font-size:18px;}
+#header #navigation a:hover {color:#999;}
+
+#header,
+#header a,
+#header #name-and-slogan,
+#header #name-and-slogan #site-name,
+#header #name-and-slogan #site-name strong,
+#header #name-and-slogan #site-name strong a,
+#header #name-and-slogan #site-slogan {font-style: normal; text-transform: lowercase; color:#FFF; text-decoration: none; font-family: Arial, sans-serif;}
+#header .block {color:#000;}
+#header #name-and-slogan,
+#header #site-name,
+#header #name-and-slogan a {font-size:18px; }
+
+/* MENU */
+#header #navigation {width:415px;}
+#header #navigation a {display:block; padding:15px 15px; float:left;  text-decoration: none; text-transform: lowercase;}
+#header #navigation h2 {display:none;}
+
+#highlighted {background:#EEE; color:#666; padding:20px 20px; border-bottom:none; font-size:36px;}
+#highlighted a { color:#999; }
+#highlighted div, #highlighted p {margin:0;}
+#highlighted .region {margin:0 auto; width:960px; padding:0px 20px; text-align: center;}
+
+hr {border:none; border-bottom:solid thin #DDD; margin:10px 60px 10px 0px;}
+
+#footer {background: black; padding:20px; color:white;}
+#footer a {color:white;}
+#footer .section {margin:0 auto; width:960px;}
+
+/* LAYOUT */
+body {margin:0; padding:0;}
+body.sidebar-second #content {width:75%;}
+body.sidebar-second #sidebar-second {width:25%;}
+#main-wrapper {margin:0 auto; max-width:960px;}
+#header .section {margin:0;}
+#header > .section {margin:0 auto; width:960px;}
+
+.sidebar #block-views-slideshow-block {margin:0 0 10px; padding:0; border:none;}
+
+
+body {background:#FFF /* url(/blog/sites/all/themes/stark/images/sandy_flare_desktop.jpg) */ top center;}
+.content {font-size:1.071em;}
+
+/* BLOCKS */
+#content .block-block {
+  border: 1px solid;
+  padding: 15px 20px;
+  margin: 0 0 20px;
+}
+#content .block-block h2 {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.2;
+}
+#content .block-block .content {
+  line-height: 1.4;
+}
+
+#content .block-block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+
+
+.not-front #sidebar-second {margin-top:57px;}
+.not-front #content #block-block-9 {background:none; border:none; padding:0px;}
+
+.blockinset {background:#EEE; margin:20px 0px; padding:20px 20px 10px;}
+
+
+.view-frontpage .views-row {margin-bottom:15px;}
+.view-frontpage .views-row .views-field-body {font-style: italic;}
+
+.node .field-type-image {float:left; margin-right:20px;}
+
+#footer {font-size:13px;}
+
+#highlighted #mc_embed_signup form {padding:0px 0px 0px 60px !important; margin:0px 0px;}
+#highlighted #mc_embed_signup form label, 
+#highlighted #mc_embed_signup form input.email,
+#highlighted #mc_embed_signup form div,
+#highlighted #mc_embed_signup form div input.button {display:inline-block; width:200px;}
+#highlighted #mc_embed_signup form label,
+#highlighted #mc_embed_signup form div input.button {margin-top:1px;}
+#highlighted #mc_embed_signup form input.email {width:450px !important; margin-bottom:0px;}
+#highlighted #mc_embed_signup form div {width:150px !important;}
+#highlighted #mc_embed_signup form div input.button {width:150px !important; margin-bottom:0px; vertical-align:middle;}
+
+
+/* MAILCHIMP */
+#mc_embed_signup{clear:left; font:12px Helvetica,Arial,sans-serif; padding:0 !important; margin-bottom:30px;}
+#mc_embed_signup form{padding:0 !important;}
+/* MAILCHIMP */
