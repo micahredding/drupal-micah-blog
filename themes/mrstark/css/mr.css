@@ -11,10 +11,7 @@
   background: none; }
 
 #topbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 70px; }
+  min-height: 70px; }
   #topbar a {
     font-style: normal;
     text-transform: lowercase;
@@ -25,11 +22,7 @@
   #topbar .region a {
     color: black;
     font-size: 18px; }
-  #topbar .block {
-    float: left;
-    margin-right: 20px; }
   #topbar #name-and-slogan {
-    float: left;
     padding: 15px 20px;
     margin: 0 20px 0px 10px;
     background: #333333;
@@ -112,20 +105,6 @@ hr {
     padding: 0px 20px;
     text-align: center; }
 
-/* LAYOUT */
-body {
-  margin: 0;
-  padding: 0; }
-
-body.sidebar-second #content {
-  width: 75%; }
-body.sidebar-second #sidebar-second {
-  width: 25%; }
-
-#main-wrapper {
-  margin: 0 auto;
-  max-width: 960px; }
-
 .sidebar #block-views-slideshow-block {
   margin: 0 0 10px;
   padding: 0;
@@ -159,8 +138,7 @@ body.sidebar-second #sidebar-second {
 
 #block-block-22 .content a {
   margin-right: 40px;
-  display: block;
-  float: left; }
+  display: block; }
 
 .not-front #content #block-block-9 {
   background: none;
@@ -176,45 +154,28 @@ body.sidebar-second #sidebar-second {
   float: left;
   margin-right: 20px; }
 
-#topbar {
-  width: 100%; }
-
-#topbar #block-block-15 {
-  float: left; }
-
-#topbar #block-block-16,
-#topbar #block-block-17 {
-  float: right;
-  margin: 0px 10px 0 0;
-  padding: 0 13px 7px;
-  border-radius: 0 0 15px 15px; }
-
-#topbar #mc_embed_signup form {
-  padding: 0px 0px 0px 0px !important;
-  margin: 0px 0px;
-  width: 459px; }
-  #topbar #mc_embed_signup form label {
-    display: inline-block;
-    margin-right: 10px;
-    color: #666666;
-    margin-top: 1px; }
-  #topbar #mc_embed_signup form div {
-    display: inline-block;
-    width: 180px;
-    width: 100px !important;
-    float: right; }
-  #topbar #mc_embed_signup form div input.button {
-    width: 100px !important;
-    margin-bottom: 0px;
-    vertical-align: middle;
-    margin-top: 1px;
-    display: inline-block;
-    width: 180px; }
-  #topbar #mc_embed_signup form input.email {
-    display: inline-block;
-    width: 170px !important;
-    margin-bottom: 0px;
-    margin-right: 0px; }
+#topbar #mc_embed_signup form label {
+  display: inline-block;
+  margin-right: 10px;
+  color: #666666;
+  margin-top: 1px; }
+#topbar #mc_embed_signup form div {
+  display: inline-block;
+  width: 180px;
+  width: 100px !important;
+  float: right; }
+#topbar #mc_embed_signup form div input.button {
+  width: 100px !important;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  margin-top: 1px;
+  display: inline-block;
+  width: 180px; }
+#topbar #mc_embed_signup form input.email {
+  display: inline-block;
+  width: 170px !important;
+  margin-bottom: 0px;
+  margin-right: 0px; }
 
 #main #content > .section {
   margin-right: 30px; }
@@ -239,27 +200,6 @@ body.sidebar-second #sidebar-second {
   #footer .section {
     margin: 0 auto;
     width: 960px; }
-  #footer .block-views {
-    width: 23%;
-    margin-right: 10px;
-    float: left;
-    clear: none; }
-  #footer #block-search-form {
-    float: left;
-    width: 23%;
-    clear: right; }
-  #footer #block-views-list-of-taxonomy-block-1 {
-    width: 12%; }
-  #footer #block-views-list-of-taxonomy-block-2 {
-    width: 30%; }
-  #footer .end {
-    clear: both; }
-
-/* defunct */
-.view-frontpage .views-row {
-  margin-bottom: 15px; }
-  .view-frontpage .views-row .views-field-body {
-    font-style: italic; }
 
 a.chimp-button,
 .chimp-button {

@@ -26,10 +26,7 @@ $white:#FFFFFF;
 #page-wrapper {background:none;}
 
 #topbar {
-  position:absolute; 
-  top:0; 
-  left:0; 
-  height:70px; 
+  min-height:70px; 
 
   a {
     font-style: normal; 
@@ -44,13 +41,8 @@ $white:#FFFFFF;
     color:$black; 
     @include H3;
   }
-  .block {
-    float:left; 
-    margin-right:20px;
-  }
 
   #name-and-slogan {
-    float:left; 
     padding:15px 20px; 
     margin:0 20px 0px 10px; 
     background:$upBlack;
@@ -82,7 +74,11 @@ $white:#FFFFFF;
     &:hover {color:$midGrey;}
   }
   
+
 }
+
+
+
 
 .toolbar #topbar {
   top:65px;
@@ -141,18 +137,6 @@ hr {
 }
 
 
-/* LAYOUT */
-body {margin:0; padding:0;}
-body.sidebar-second {
-  #content {width:75%;}
-  #sidebar-second {width:25%;}
-}
-
-#main-wrapper {
-  @include Center; 
-  max-width:960px;
-}
-
 .sidebar #block-views-slideshow-block {
   margin:0 0 10px; 
   padding:0; 
@@ -187,7 +171,7 @@ body.sidebar-second {
 #block-block-22 .content a {
   margin-right:40px; 
   display:block; 
-  float:left;
+  // float:left;
 }
 
 .not-front #content #block-block-9 {
@@ -210,20 +194,8 @@ body.sidebar-second {
 
 
 
-#topbar {width:100%;}
-#topbar #block-block-15 {float:left;}
-#topbar #block-block-16,
-#topbar #block-block-17 {
-  float:right; 
-  margin:0px 10px 0 0; 
-  padding:0 13px 7px; 
-  border-radius:0 0 15px 15px;
-}
 
 #topbar #mc_embed_signup form {
-  padding:0px 0px 0px 0px !important; 
-  margin:0px 0px; 
-  width:459px;
   
   label {
     display:inline-block; 
@@ -258,9 +230,6 @@ body.sidebar-second {
 }
 
 
-
-
-
 #main #content > .section {margin-right:30px;}
 
 /* MAILCHIMP */
@@ -287,29 +256,6 @@ body.sidebar-second {
     @include FullWidth;
   }
   
-  .block-views {
-    width:23%; 
-    margin-right:10px; 
-    float:left; 
-    clear:none;
-  }
-
-  #block-search-form {
-    float:left; 
-    width:23%; 
-    clear:right;
-  }
-  
-  #block-views-list-of-taxonomy-block-1 {width:12%;}
-  #block-views-list-of-taxonomy-block-2 {width:30%;}
-  .end {clear:both;}
-}
-
-
-/* defunct */
-.view-frontpage .views-row {
-  margin-bottom:15px;
-  .views-field-body {font-style: italic;}
 }
 
 a.chimp-button,

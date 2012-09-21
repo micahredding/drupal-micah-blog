@@ -1,0 +1,30 @@
+<?php
+
+function mrblocks_block_info() {
+  return array(
+    'site-title' => array(
+      'info' => t('Site Title'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
+  );
+}
+
+
+function mrblocks_block_view($id) {
+  switch($id) {
+    case 'site-title':
+      return array(
+        'Site Name',
+        '<div id="site-name">
+              <strong>
+                <a href="<?php print base_path(); ?>" title="Home" rel="home">
+                  <span>Micah Redding</span>
+                </a>
+              </strong>
+            </div>            
+       ',);
+    break;
+  }
+}
+
+

@@ -1,0 +1,76 @@
+@mixin Center {margin:0 auto;}
+
+
+/* LAYOUT */
+body {margin:0; padding:0;}
+
+#topbar {
+  padding:0 20px;
+  width:100%;
+}
+#page-wrapper {
+  padding:0 20px;
+}
+#footer {
+  padding:0 20px;
+}
+
+#main-wrapper {
+  @include Center; 
+  max-width:960px;
+}
+
+
+
+/* Topbar blocks */
+// #topbar #block-block-15 {float:left;}
+#topbar > div {
+  // float:left;
+  .block {
+    // float:left; 
+    margin-right:20px;
+  }
+}
+
+#topbar #block-block-16,
+#topbar #block-block-17 {
+  // float:right; 
+  margin:0px 10px 0 0; 
+  padding:0 13px 7px; 
+  border-radius:0 0 15px 15px;
+}
+
+#topbar #mc_embed_signup form {
+  padding:0px 0px 0px 0px !important; 
+  margin:0px 0px; 
+  width:459px;
+}
+
+
+/* Sidebars */
+body.sidebar-second {
+  // #content {width:75%;}
+  // #sidebar-second {width:25%;}
+}
+
+
+/* Footer Blocks */
+#footer {
+  
+  .block-views {
+    // width:23%; 
+    width:100%;
+    margin-right:10px; 
+    float:left; 
+    clear:none;
+  }
+
+  #block-search-form {
+    float:left; 
+    // width:23%; 
+    clear:right;
+  }
+  
+  .end {clear:both;}
+}
+

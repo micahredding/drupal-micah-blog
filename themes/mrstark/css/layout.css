@@ -1,0 +1,46 @@
+/* LAYOUT */
+body {
+  margin: 0;
+  padding: 0; }
+
+#topbar {
+  padding: 0 20px;
+  width: 100%; }
+
+#page-wrapper {
+  padding: 0 20px; }
+
+#footer {
+  padding: 0 20px; }
+
+#main-wrapper {
+  margin: 0 auto;
+  max-width: 960px; }
+
+/* Topbar blocks */
+#topbar > div .block {
+  margin-right: 20px; }
+
+#topbar #block-block-16,
+#topbar #block-block-17 {
+  margin: 0px 10px 0 0;
+  padding: 0 13px 7px;
+  border-radius: 0 0 15px 15px; }
+
+#topbar #mc_embed_signup form {
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px;
+  width: 459px; }
+
+/* Sidebars */
+/* Footer Blocks */
+#footer .block-views {
+  width: 100%;
+  margin-right: 10px;
+  float: left;
+  clear: none; }
+#footer #block-search-form {
+  float: left;
+  clear: right; }
+#footer .end {
+  clear: both; }
