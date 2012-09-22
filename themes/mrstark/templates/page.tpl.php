@@ -128,8 +128,9 @@
 
   <div id="footer"><div class="section">
     <?php print render($page['footer']); ?>
+    <div class="end">&nbsp;</div>
     <a href="https://plus.google.com/110800681150805455169?
  rel=author">Google</a>
-    <div class="end">&nbsp;</div>
+
   </div></div> <!-- /.section, /#footer -->
 

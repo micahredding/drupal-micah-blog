@@ -1,5 +1,5 @@
 @mixin Center {margin:0 auto;}
-@mixin Fluid {@include Center; max-width:960px;}
+@mixin Fluid {margin:0 auto; max-width:960px;}
 
 /* LAYOUT */
 body {margin:0; padding:0;}
@@ -26,32 +26,33 @@ body {margin:0; padding:0;}
 /* Topbar blocks */
 // #topbar #block-block-15 {float:left;}
 #topbar {
+  #block-mrblocks-site-title {
+    padding:0 0;
+  }
+
   // float:left;
-  .block {
+  // .block {
     // float:left; 
     // margin-right:20px;
     // padding:15px 20px;
 
-  }
-  #block-mrblocks-site-title {
-    padding:0 0;
-  }
-  #block-block-17 {
+  // }
+  // #block-block-17 {
     // padding:15px 20px;
-  }
+  // }
 
-  #block-block-15 {
+  // #block-block-15 {
     // padding:15px 20px;
-  }
+  // }
 }
 
-#topbar #block-block-16,
-#topbar #block-block-17 {
+// #topbar #block-block-16,
+// #topbar #block-block-17 {
   // float:right; 
   // margin:0px 10px 0 0; 
   // padding:0 13px 7px; 
   // border-radius:0 0 15px 15px;
-}
+// }
 
 #topbar #mc_embed_signup form {
   padding:0px 0px 0px 0px !important; 
@@ -69,21 +70,16 @@ body.sidebar-second {
 
 /* Footer Blocks */
 #footer {
-  
-  .block-views {
-    // width:23%; 
-    width:100%;
-    margin-right:10px; 
-    float:left; 
-    clear:none;
+  .block {
+    float:left;
+    clear:none !important;
+    margin:20px !important;
+  }
+    
+  #block-search-form .content {
+    padding:0;
   }
 
-  #block-search-form {
-    float:left; 
-    // width:23%; 
-    clear:right;
-  }
-  
   .end {clear:both;}
 }
 

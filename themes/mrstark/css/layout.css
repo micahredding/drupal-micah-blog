@@ -33,13 +33,11 @@ body {
 
 /* Sidebars */
 /* Footer Blocks */
-#footer .block-views {
-  width: 100%;
-  margin-right: 10px;
+#footer .block {
   float: left;
-  clear: none; }
-#footer #block-search-form {
-  float: left;
-  clear: right; }
+  clear: none !important;
+  margin: 20px !important; }
+#footer #block-search-form .content {
+  padding: 0; }
 #footer .end {
   clear: both; }

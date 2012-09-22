@@ -94,10 +94,21 @@ hr {
   margin:10px 60px 10px 0px;
 }
 
+#header .block {
+  float:left;
+}
 #header img {
   width:100%;
+  max-width:250px;
 }
 #content img {
+  max-width:100%;
+}
+
+#content .node .content img {
+  float:left;
+  clear:left;
+  margin:10px 20px 20px 0;
   max-width:100%;
 }
 
