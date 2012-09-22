@@ -12,7 +12,7 @@ $white:#FFFFFF;
 @mixin Serif {font-family: Georgia, "Times New Roman", sans-serif;}
 @mixin SanSerif {font-family: Arial, sans-serif;}
 @mixin Center {margin:0 auto;}
-@mixin FullWidth {width:960px;}
+@mixin FullWidth {max-width:960px;}
 
 @mixin H1 {font-size:78px;}
 @mixin H2 {font-size:36px;}
@@ -42,9 +42,9 @@ $white:#FFFFFF;
     @include H3;
   }
 
-  #name-and-slogan {
+  #site-name {
     padding:15px 20px; 
-    margin:0 20px 0px 10px; 
+    margin:0px; 
     background:$upBlack;
     background:$darkGrey;
     font-style: normal; 
@@ -53,19 +53,18 @@ $white:#FFFFFF;
     text-decoration: none; 
     @include SanSerif; 
     @include H3;
+  }
 
-    #site-name,
-    #site-name strong,
-    #site-name strong a,
-    #site-slogan {
-      font-style: normal; 
-      text-transform: lowercase; 
-      color:$white; 
-      text-decoration: none; 
-      @include SanSerif; 
-      @include H3;    
-    }
-
+  #site-name,
+  #site-name strong,
+  #site-name strong a,
+  #site-slogan {
+    font-style: normal; 
+    text-transform: lowercase; 
+    color:$white; 
+    text-decoration: none; 
+    @include SanSerif; 
+    @include H3;    
   }
   
   #navigation a {
@@ -95,9 +94,15 @@ hr {
   margin:10px 60px 10px 0px;
 }
 
+#header img {
+  width:100%;
+}
+#content img {
+  max-width:100%;
+}
+
 
 #header {
-  margin-top:80px; 
   margin-bottom:20px;
 
   h1.section {
@@ -110,13 +115,12 @@ hr {
     color:$black; 
     text-decoration: none;
   }
-  .region-header .block {float:none;}
+  .region-header .block {float:none; margin:0 0;}
   .section {margin:0;}
 }
 
 #header > .section {
   @include Center; 
-  @include FullWidth;
 }
 
 
@@ -130,7 +134,6 @@ hr {
   div, p {margin:0;}
   .region {
     @include Center; 
-    @include FullWidth; 
     padding:0px 20px; 
     text-align: center;
   }
@@ -229,9 +232,6 @@ hr {
   
 }
 
-
-#main #content > .section {margin-right:30px;}
-
 /* MAILCHIMP */
 #sidebar-second #mc_embed_signup {
   clear:left;
@@ -253,7 +253,6 @@ hr {
   a {color:white;}
   .section {
     @include Center; 
-    @include FullWidth;
   }
   
 }

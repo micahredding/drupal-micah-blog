@@ -1,43 +1,56 @@
 @mixin Center {margin:0 auto;}
-
+@mixin Fluid {@include Center; max-width:960px;}
 
 /* LAYOUT */
 body {margin:0; padding:0;}
 
 #topbar {
+  @include Fluid;
   padding:0 20px;
-  width:100%;
 }
 #page-wrapper {
+  @include Fluid;
   padding:0 20px;
 }
 #footer {
+  @include Fluid;
   padding:0 20px;
 }
 
 #main-wrapper {
-  @include Center; 
-  max-width:960px;
+  @include Fluid; 
 }
 
 
 
 /* Topbar blocks */
 // #topbar #block-block-15 {float:left;}
-#topbar > div {
+#topbar {
   // float:left;
   .block {
     // float:left; 
-    margin-right:20px;
+    // margin-right:20px;
+    // padding:15px 20px;
+
+  }
+  #block-mrblocks-site-title {
+    padding:0 0;
+  }
+  #block-block-17 {
+    // padding:15px 20px;
+  }
+
+  #block-block-15 {
+    // padding:15px 20px;
   }
 }
 
 #topbar #block-block-16,
 #topbar #block-block-17 {
   // float:right; 
-  margin:0px 10px 0 0; 
-  padding:0 13px 7px; 
-  border-radius:0 0 15px 15px;
+  // margin:0px 10px 0 0; 
+  // padding:0 13px 7px; 
+  // border-radius:0 0 15px 15px;
 }
 
 #topbar #mc_embed_signup form {

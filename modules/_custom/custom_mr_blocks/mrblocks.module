@@ -1,0 +1,66 @@
+<?php
+
+function mrblocks_block_info() {
+  return array(
+    'site-title' => array(
+      'info' => t('Site Title'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
+    'section-title-life' => array(
+      'info' => t('Section Title Life'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
+    'section-photo-life' => array(
+      'info' => t('Section Photo Life'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
+    'site-message' => array(
+      'info' => t('Site Message'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
+
+  );
+}
+
+
+function mrblocks_block_view($id) {
+  switch($id) {
+    case 'site-title':
+      return array(
+        'subject' => 'Site Name',
+        'content' => '<div id="site-name">
+              <strong>
+                <a href="' . base_path() . '" title="Home" rel="home">
+                  <span>Micah Redding</span>
+                </a>
+              </strong>
+            </div>            
+       ',);
+    break;
+    case 'section-title-life':
+      return array(
+        'subject' => 'Section Title Life on the Curve',
+        'content' => '<h1 class="section">
+                <a href="' . base_path() . 'life" title="Home" rel="home">Life on the Curve</a>
+            </h1>',);
+    break;
+    case 'section-photo-life':
+      return array(
+        'subject' => 'Section Photo Life on the Curve',
+        'content' => '<a href="' . base_path() . 'life" title="Home" rel="home">
+            <img src="' . base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/curve.jpg" /></a>',);
+    break;
+
+    case 'site-message':
+      return array(
+        'subject' => 'Site Message',
+        'content' => 'Random musings, unconventional theological reflections,   and memos from the edge of my human experience.',
+      );
+    break;
+
+  }
+}
+
+
+
+

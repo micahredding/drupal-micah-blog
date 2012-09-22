@@ -22,9 +22,9 @@
   #topbar .region a {
     color: black;
     font-size: 18px; }
-  #topbar #name-and-slogan {
+  #topbar #site-name {
     padding: 15px 20px;
-    margin: 0 20px 0px 10px;
+    margin: 0px;
     background: #333333;
     background: #666666;
     font-style: normal;
@@ -33,16 +33,16 @@
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-size: 18px; }
-    #topbar #name-and-slogan #site-name,
-    #topbar #name-and-slogan #site-name strong,
-    #topbar #name-and-slogan #site-name strong a,
-    #topbar #name-and-slogan #site-slogan {
-      font-style: normal;
-      text-transform: lowercase;
-      color: white;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 18px; }
+  #topbar #site-name,
+  #topbar #site-name strong,
+  #topbar #site-name strong a,
+  #topbar #site-slogan {
+    font-style: normal;
+    text-transform: lowercase;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 18px; }
   #topbar #navigation a {
     color: black;
     font-size: 18px; }
@@ -69,8 +69,13 @@ hr {
   border-bottom: solid thin #eeeeee;
   margin: 10px 60px 10px 0px; }
 
+#header img {
+  width: 100%; }
+
+#content img {
+  max-width: 100%; }
+
 #header {
-  margin-top: 80px;
   margin-bottom: 20px; }
   #header h1.section {
     font-size: 78px;
@@ -81,13 +86,13 @@ hr {
     color: black;
     text-decoration: none; }
   #header .region-header .block {
-    float: none; }
+    float: none;
+    margin: 0 0; }
   #header .section {
     margin: 0; }
 
 #header > .section {
-  margin: 0 auto;
-  width: 960px; }
+  margin: 0 auto; }
 
 #highlighted {
   background: #eeeeee;
@@ -101,7 +106,6 @@ hr {
     margin: 0; }
   #highlighted .region {
     margin: 0 auto;
-    width: 960px;
     padding: 0px 20px;
     text-align: center; }
 
@@ -177,9 +181,6 @@ hr {
   margin-bottom: 0px;
   margin-right: 0px; }
 
-#main #content > .section {
-  margin-right: 30px; }
-
 /* MAILCHIMP */
 #sidebar-second #mc_embed_signup {
   clear: left;
@@ -198,8 +199,7 @@ hr {
   #footer a {
     color: white; }
   #footer .section {
-    margin: 0 auto;
-    width: 960px; }
+    margin: 0 auto; }
 
 a.chimp-button,
 .chimp-button {
