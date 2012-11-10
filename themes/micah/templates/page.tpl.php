@@ -66,24 +66,38 @@
  * @see template_process()
  */
 ?>
-    <div id="topbar">
-      <?php print render($page['topbar']); ?>        
-    </div>
+
     
     
   <div id="page-wrapper"><div id="page">
 
-    <div id="header"><div class="section clearfix">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
+    <header>
+      <div id="site-info">
+        <?php if($site_name): ?>
+        <div id="site-name">
+          <a href="<?php print $base_path; ?>">
+            <?php print $site_name; ?>
+          </a>
+        </div>
+        <?php endif; ?>
+        <?php if ($main_menu): ?>
+          <nav id="main-menu" class="navigation">
+            <?php print render($main_menu); ?>
+          </nav>
+        <?php endif; ?>
+      </div>
+      <div id="section-info">
+        <?php if ($logo): ?>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          </a>
+        <?php endif; ?>
+        <?php if($section_title): ?>
+          <h1 class="section title"><?php print $section_title; ?></h1>
+        <?php endif; ?>
+      </div>
 
-    <?php print render($page['header']); ?>
-
-
-    </div></div> <!-- /.section, /#header -->
+    </header>
 
 
     <?php if (FALSE && $breadcrumb): ?>
@@ -92,7 +106,11 @@
 
     <?php print $messages; ?>
 
-    <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+    <?php if ($page['highlighted']): ?>
+      <div id="highlighted">
+        <?php print render($page['highlighted']); ?>
+      </div>
+    <?php endif; ?>
         
     <div id="main-wrapper"><div id="main" class="clearfix">
 
@@ -100,7 +118,7 @@
 
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
-        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+        <?php if ($title): ?><h1 class="page title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
         <?php print render($title_suffix); ?>
         <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
@@ -126,11 +144,11 @@
 
   </div></div> <!-- /#page, /#page-wrapper -->
 
-  <div id="footer"><div class="section">
+  <footer>
     <?php print render($page['footer']); ?>
     <div class="end">&nbsp;</div>
     <a href="https://plus.google.com/110800681150805455169?
  rel=author">Google</a>
 
-  </div></div> <!-- /.section, /#footer -->
+  </footer>
 

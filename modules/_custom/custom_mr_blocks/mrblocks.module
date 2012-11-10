@@ -14,6 +14,15 @@ function mrblocks_block_info() {
       'info' => t('Section Photo Life'),
       'cache' => DRUPAL_NO_CACHE,
     ),
+    'section-title-theology' => array(
+      'info' => t('Section Title Theology'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
+    'section-photo-theology' => array(
+      'info' => t('Section Photo Theology'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
+
     'site-message' => array(
       'info' => t('Site Message'),
       'cache' => DRUPAL_NO_CACHE,
@@ -49,6 +58,19 @@ function mrblocks_block_view($id) {
         'subject' => 'Section Photo Life on the Curve',
         'content' => '<a href="' . base_path() . 'life" title="Home" rel="home">
             <img src="' . base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/curve.jpg" /></a>',);
+    break;
+    case 'section-title-theology':
+      return array(
+        'subject' => 'Section Title Theology',
+        'content' => '<h1 class="section">
+                <a href="' . base_path() . 'theology" title="Home" rel="home">Christianity Against Religion</a>
+            </h1>',);
+    break;
+    case 'section-photo-theology':
+      return array(
+        'subject' => 'Section Photo Life on the Curve',
+        'content' => '<a href="' . base_path() . 'theology" title="Home" rel="home">
+            <img src="' . base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/xn.jpg" /></a>',);
     break;
 
     case 'site-message':

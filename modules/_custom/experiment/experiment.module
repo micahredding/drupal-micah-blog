@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the experiment feature.
+ */
+
+include_once 'experiment.features.inc';
