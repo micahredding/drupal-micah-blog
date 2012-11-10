@@ -20,26 +20,23 @@ $white:#FFFFFF;
 @mixin Body {font-size:12px;}
 
 
-
+/* Universal Functions */
 @mixin clearfix {
   /**
   * For IE 6/7 only
   * Include this rule to trigger hasLayout and contain floats.
   */
   *zoom: 1;
-
   /* For modern browsers */
   &:before,
   &:after {
       content: " "; /* 1 */
       display: table; /* 2 */
   }
-
   &:after {
       clear: both;
   }
 }
-
 
 @mixin colordrill ($color:#ffffff) {
   color:$color;
@@ -67,7 +64,6 @@ $white:#FFFFFF;
   }
 }
 
-
 @mixin border-radius ($number:20px) {
   -webkit-border-radius: $number; 
   -moz-border-radius: $number; 
@@ -75,18 +71,60 @@ $white:#FFFFFF;
   border-radius: $number; 
 }
 
+@mixin border-box {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */  
+}
 
+/* Layout */
 
-
-@mixin Fluid {margin:0 auto; max-width:960px;}
-
-@mixin onewidth {
-  width:100%;
+@mixin Fluid {
+  margin:0 auto; 
   max-width:960px;
-  margin:0 auto;
 }
 
-@mixin twowidth {
-  @include onewidth; 
-}
+// @mixin onewidth {
+//   width:100%;
+//   max-width:960px;
+//   margin:0 auto;
+// }
 
+// @mixin twowidth {
+//   @include onewidth; 
+// }
+
+
+
+
+/* Styles */
+
+@mixin chimp-button {
+  @include colordrill(#ffffff);
+  background-color: #aaaaaa; 
+
+  display: block; 
+  margin: 0 5px 10px 0; 
+  padding: 0 22px; 
+  width: auto;
+  height: 32px; 
+
+  clear:both; 
+  border: 0 none; 
+  border-radius:4px; 
+  cursor: pointer; 
+
+  font-size:15px; 
+  font-weight: bold; 
+  font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+  text-align: center; 
+  @include text-decoration-none;
+
+  line-height: 32px; 
+  vertical-align: top; 
+  white-space: nowrap; 
+
+  &:hover {
+    background-color:#777777;    
+  }
+}

@@ -1,31 +1,27 @@
 @import '_define';
 
-/* HEADER */
-header {margin:0; padding:0; background:none; }
-#page {background:none;}
-#page-wrapper {background:none;}
-footer {}
+body {
+  background:#ffffff;
+}
+footer {
+  @include Body;
+  @include colordrill(#ffffff);
+  background: #000000;
+  padding:20px; 
+}
 
 
 header {
-  margin-bottom:20px;
-
-  @media (min-width:960px) {
-    margin-top:100px;
-  }
-
   #site-info {
-
     @media (min-width:960px) {
       position:static;
-      position:absolute;
+      // position:absolute;
       top:0;
       left:0;
-
     }
 
     display:block;
-    margin:0 0 20px 0;
+    margin:0 0 40px 0;
     padding:0;
     background: #333333;
     @include clearfix;
@@ -54,11 +50,9 @@ header {
 
     nav {
       display:inline-block;
-
       ul {
         margin:0;
         padding-left:0;
-
         li {
           list-style:none;
           display: inline-block;
@@ -87,8 +81,41 @@ header {
   }
 }
 
-body {background:$white;}
 
+@media (min-width:960px) {
+  header h1.section:before {
+    content: url(../images/curve.jpg);
+    padding:0 20px 0px 0;
+    float:left;
+  }
+  header h1.section:after {
+    clear:both;
+    display: block;
+    float: none;
+    content: ' ';
+  }
+  .life header h1.section {
+    max-width:500px;
+  }  
+  .theology header h1.section:before {
+    content: url(../images/cross.jpg);
+    padding:0 20px 0px 0;
+    float:left;
+  }
+  .experiment header h1.section:before {
+    content: url(../images/notes.jpg);
+    padding:0 20px 0px 0;
+  }
+}
+
+
+
+
+
+
+.tabs {
+  margin:0;
+}
 hr {
   border:none; 
   border-bottom:solid thin $downWhite; 
@@ -106,29 +133,6 @@ hr {
   max-width:100%;
 }
 
-@media (min-width:960px) {
-  header h1.section:before {
-    content: url(../images/curve.jpg);
-    padding:0 20px 20px 0;
-  }
-  .theology header h1.section:before {
-    content: url(../images/cross.jpg);
-    padding:0 20px 20px 0;
-    float:left;
-  }
-  .theology header h1.section:after {
-    clear:both;
-    display: block;
-    float: none;
-    content: ' ';
-  }
-  .experiment header h1.section:before {
-    content: url(../images/notes.jpg);
-    padding:0 20px 20px 0;
-  }
-}
-
-
 #highlighted {
   background:$downWhite; 
   color:$downGrey; 
@@ -144,7 +148,6 @@ hr {
   }
 }
 
-
 .sidebar #block-views-slideshow-block {
   margin:0 0 10px; 
   padding:0; 
@@ -158,37 +161,32 @@ hr {
   margin-right:20px;
 }
 
+@media (max-width:560px) {
+  .comment {
+    .attribution {
+      display: inline-block;
+      width:auto;
 
-#footer {
-  @include Body;
-  background: black; 
-  padding:20px; 
-  color:white;
-  
-  a {color:white;}
-  .section {
-    @include Center; 
+    }
+    .comment-text {
+      display: inline-block;
+      width:auto;
+    }
+    .comment-arrow {
+      display: none;
+    }
+  } 
+  .comment-form,
+  .one-sidebar .comment-form {    
+    input, .form-text, .form-select {
+      display:inline-block;
+      width:auto;
+    }
   }
-  
 }
 
 
-/* Comments */
-
-.comment {
-  .attribution {
-    display:block;
-    // float:left;
-    padding:15px 30px;
-    width:auto;
-  }
-  .comment-text {
-    width:700px;
-    display:block;
-    // float:left;
-    width:auto;
-  }
-  .comment-arrow {
-    // display:none;
-  }
+/* Styles */
+.chimp-button {
+  @include chimp-button;
 }
