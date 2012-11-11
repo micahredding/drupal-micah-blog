@@ -43,8 +43,12 @@ header {
 }
 footer {
   @include clearfix;
-  @include Fluid;
+  @include border-box;
   padding:0 20px;
+
+  .internal {
+    @include Fluid;
+  }
 }
 
 /* Internal Layout */

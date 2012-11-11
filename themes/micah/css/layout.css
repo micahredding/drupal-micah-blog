@@ -65,8 +65,11 @@ footer {
   */
   *zoom: 1;
   /* For modern browsers */
-  margin: 0 auto;
-  max-width: 960px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
   padding: 0 20px; }
   footer:before, footer:after {
     content: " ";
@@ -75,6 +78,9 @@ footer {
     /* 2 */ }
   footer:after {
     clear: both; }
+  footer .internal {
+    margin: 0 auto;
+    max-width: 960px; }
 
 /* Internal Layout */
 #main-wrapper #main {

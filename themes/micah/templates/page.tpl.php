@@ -147,10 +147,10 @@
   </div></div> <!-- /#page, /#page-wrapper -->
 
   <footer>
+    <div class="internal">
     <?php print render($page['footer']); ?>
-    <div class="end">&nbsp;</div>
     <a href="https://plus.google.com/110800681150805455169?
  rel=author">Google</a>
-
+    </div>
   </footer>
 
