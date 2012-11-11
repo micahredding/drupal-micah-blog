@@ -1,0 +1,8 @@
+staging:
+  domain: 
+  - name: "bricksco@bricksites.com"
+    ssh_options:
+    - "-p 2222"
+  deploy_to: "/public_html/micahredding/blog/sites/all"
+  repository: "git@github.com:micahredding/drupal-theme-personal.git"
+  branch: "master"
