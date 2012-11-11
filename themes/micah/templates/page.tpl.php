@@ -67,37 +67,38 @@
  */
 ?>
 
+
+  <header>
+    <div id="site-info">
+      <?php if($site_name): ?>
+      <div id="site-name">
+        <a href="<?php print $base_path; ?>">
+          <?php print $site_name; ?>
+        </a>
+      </div>
+      <?php endif; ?>
+      <?php if ($main_menu): ?>
+        <nav id="main-menu" class="navigation">
+          <?php print render($main_menu); ?>
+        </nav>
+      <?php endif; ?>
+    </div>
+    <div id="section-info">
+      <?php if ($logo): ?>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
+      <?php endif; ?>
+      <?php if($section_title): ?>
+        <h1 class="section title"><?php print $section_title; ?></h1>
+      <?php endif; ?>
+    </div>
+
+  </header>
     
     
   <div id="page-wrapper"><div id="page">
 
-    <header>
-      <div id="site-info">
-        <?php if($site_name): ?>
-        <div id="site-name">
-          <a href="<?php print $base_path; ?>">
-            <?php print $site_name; ?>
-          </a>
-        </div>
-        <?php endif; ?>
-        <?php if ($main_menu): ?>
-          <nav id="main-menu" class="navigation">
-            <?php print render($main_menu); ?>
-          </nav>
-        <?php endif; ?>
-      </div>
-      <div id="section-info">
-        <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-          </a>
-        <?php endif; ?>
-        <?php if($section_title): ?>
-          <h1 class="section title"><?php print $section_title; ?></h1>
-        <?php endif; ?>
-      </div>
-
-    </header>
 
 
     <?php if (FALSE && $breadcrumb): ?>

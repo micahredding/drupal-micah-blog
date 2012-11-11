@@ -22,6 +22,10 @@ header {
     clear: both; }
   header h1 {
     margin: 0; }
+  header #section-info {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px; }
 
 #page-wrapper {
   /**
@@ -49,10 +53,6 @@ header {
     padding: 0; }
   #page-wrapper #page {
     background: none; }
-    #page-wrapper #page header {
-      margin: 0;
-      padding: 0;
-      background: none; }
     #page-wrapper #page #main-wrapper {
       margin-top: 40px; }
       #page-wrapper #page #main-wrapper #content h1 {
