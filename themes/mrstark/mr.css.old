@@ -1,0 +1,134 @@
+/* HEADER */
+#header {margin:0; padding:0; background:none; }
+#page {background:none;}
+#page-wrapper {background:none;}
+/* #main {margin-left:20px; margin-right:20px;}  */
+
+#topbar {position:absolute; top:0; left:0; height:70px; }
+#topbar #name-and-slogan {float:left; padding:15px 20px; margin:0 20px 0px 10px; background:#AAA;}
+#topbar #name-and-slogan {background:#333;}
+/* #topbar .region {float:left; margin-left:10px; margin-top:0px;} */
+#topbar #navigation a {color:#000; font-size:18px;}
+#topbar #navigation a:hover {color:#999;}
+
+.toolbar #topbar {top:65px;}
+
+#header {margin-top:80px; margin-bottom:20px;}
+
+body.theology #header {margin-top:80px;}
+body.front #header {margin-top:30px;}
+body.life #header {margin-top:80px;}
+
+#header h1.section,
+#header h1.section a {font-size:78px; line-height:1em; text-transform: none; font-family: Georgia, "Times New Roman", sans-serif; color:#000; text-decoration: none;}
+#header .region-header .block {float:none;}
+#header .section {margin:0;}
+#header > .section {margin:0 auto; width:960px;}
+
+#topbar,
+#topbar a,
+#topbar #name-and-slogan,
+#topbar #name-and-slogan #site-name,
+#topbar #name-and-slogan #site-name strong,
+#topbar #name-and-slogan #site-name strong a,
+#topbar #name-and-slogan #site-slogan
+{font-style: normal; text-transform: lowercase; color:#FFF; text-decoration: none; font-family: Arial, sans-serif; font-size:18px;}
+#topbar .region,
+#topbar .region a,
+#topbar .block {color:#000; font-size:18px;}
+#topbar .block {float:left; margin-right:20px;}
+
+#highlighted {background:#EEE; color:#666; padding:20px 20px; border-bottom:none; font-size:36px;}
+#highlighted a { color:#999; }
+#highlighted div, #highlighted p {margin:0;}
+#highlighted .region {margin:0 auto; width:960px; padding:0px 20px; text-align: center;}
+
+hr {border:none; border-bottom:solid thin #DDD; margin:10px 60px 10px 0px;}
+
+#footer {background: black; padding:20px; color:white;}
+#footer a {color:white;}
+#footer .section {margin:0 auto; width:960px;}
+
+/* LAYOUT */
+body {margin:0; padding:0;}
+body.sidebar-second #content {width:75%;}
+body.sidebar-second #sidebar-second {width:25%;}
+#main-wrapper {margin:0 auto; max-width:960px;}
+
+.sidebar #block-views-slideshow-block {margin:0 0 10px; padding:0; border:none;}
+
+body {background:#FFF top center;}
+.content {font-size:1.071em;}
+
+/* BLOCKS */
+#content .block-block {
+  border: 1px solid;
+  padding: 15px 20px;
+  margin: 0 0 20px;
+}
+#content .block-block h2 {
+  margin: 0 0 0.5em;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 5px;
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.2;
+}
+#content .block-block .content {
+  line-height: 1.4;
+}
+
+#content .block-block {
+  background-color: #f6f6f2;
+  border-color: #f9f9f9;
+}
+
+
+.not-front #sidebar-second {margin-top:57px;}
+.not-front #content #block-block-9 {background:none; border:none; padding:0px;}
+
+.blockinset {background:#EEE; margin:20px 0px; padding:20px 20px 10px;}
+
+
+.view-frontpage .views-row {margin-bottom:15px;}
+.view-frontpage .views-row .views-field-body {font-style: italic;}
+
+.node .field-type-image {float:left; margin-right:20px;}
+
+#footer {font-size:13px;}
+
+#topbar {width:100%;}
+#topbar #block-block-16,
+#topbar #block-block-17 {float:right; margin:0px 10px 0 0; /* background:#DDD; */ padding:0 13px 7px; border-radius:0 0 15px 15px;}
+
+#topbar #mc_embed_signup form {padding:0px 0px 0px 0px !important; margin:0px 0px; width:459px;}
+#topbar #mc_embed_signup form label {display:inline-block; margin-right:10px; color:#666;}
+#topbar #mc_embed_signup form input.email {display:inline-block;}
+
+#topbar #mc_embed_signup form div,
+#topbar #mc_embed_signup form div input.button {display:inline-block; width:180px;}
+
+#topbar #mc_embed_signup form label,
+#topbar #mc_embed_signup form div input.button {margin-top:1px;}
+
+#topbar #mc_embed_signup form input.email {width:170px !important; margin-bottom:0px; margin-right:0px;}
+
+#topbar #mc_embed_signup form div {width:100px !important; float:right;}
+#topbar #mc_embed_signup form div input.button {width:100px !important; margin-bottom:0px; vertical-align:middle;}
+
+#block-block-24 {background:none;}
+#block-block-22 .content a {margin-right:40px; display:block; float:left;}
+
+#main #content > .section {margin-right:30px;}
+
+/* MAILCHIMP */
+#sidebar-second #mc_embed_signup{clear:left; font:12px Helvetica,Arial,sans-serif; padding:0 !important; margin-bottom:30px;}
+#sidebar-second #mc_embed_signup form{padding:0 !important;}
+/* MAILCHIMP */
+
+#footer #block-block-7 {/* float:left; width:70%; clear:left; */}
+#footer .block-views {width:23%; margin-right:10px; float:left; clear:none;}
+#footer #block-search-form {float:left; width:23%; clear:right;}
+#footer #block-views-list-of-taxonomy-block-1 {width:12%;}
+#footer #block-views-list-of-taxonomy-block-2 {width:30%;}
+
+#footer .end {clear:both;}
