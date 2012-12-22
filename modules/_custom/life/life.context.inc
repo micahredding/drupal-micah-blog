@@ -15,7 +15,7 @@ function life_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'life';
   $context->description = '';
-  $context->tag = '';
+  $context->tag = 'category';
   $context->conditions = array(
     'context' => array(
       'values' => array(
@@ -26,30 +26,15 @@ function life_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'mrblocks-section-photo-life' => array(
-          'module' => 'mrblocks',
-          'delta' => 'section-photo-life',
-          'region' => 'header',
-          'weight' => '-22',
-        ),
-        'mrblocks-section-title-life' => array(
-          'module' => 'mrblocks',
-          'delta' => 'section-title-life',
-          'region' => 'header',
-          'weight' => '-21',
-        ),
-        'block-8' => array(
-          'module' => 'block',
-          'delta' => '8',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-      ),
+    'theme_html' => array(
+      'class' => 'life',
     ),
   );
   $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('category');
   $export['life'] = $context;
 
   return $export;

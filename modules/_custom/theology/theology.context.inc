@@ -15,7 +15,7 @@ function theology_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'theology';
   $context->description = '';
-  $context->tag = '';
+  $context->tag = 'category';
   $context->conditions = array(
     'node_taxonomy' => array(
       'values' => array(
@@ -34,33 +34,19 @@ function theology_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'mrblocks-section-title-theology' => array(
-          'module' => 'mrblocks',
-          'delta' => 'section-title-theology',
-          'region' => 'header',
-          'weight' => '-10',
-        ),
-        'mrblocks-section-photo-theology' => array(
-          'module' => 'mrblocks',
-          'delta' => 'section-photo-theology',
-          'region' => 'header',
-          'weight' => '-10',
-        ),
-        'block-19' => array(
-          'module' => 'block',
-          'delta' => '19',
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-      ),
+    'theme' => array(
+      'title' => 'Christianity Against Religion',
+      'subtitle' => '',
     ),
     'theme_html' => array(
       'class' => 'theology',
     ),
   );
   $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('category');
   $export['theology'] = $context;
 
   return $export;
