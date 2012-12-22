@@ -89,7 +89,7 @@
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
-      <?php if($section_title): ?>
+      <?php if(isset($section_title)): ?>
         <h1 class="section title"><?php print $section_title; ?></h1>
       <?php endif; ?>
     </div>
