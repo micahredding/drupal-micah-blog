@@ -15,7 +15,7 @@ function experiment_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'experiment';
   $context->description = '';
-  $context->tag = '';
+  $context->tag = 'category';
   $context->conditions = array(
     'node_taxonomy' => array(
       'values' => array(
@@ -34,30 +34,19 @@ function experiment_context_default_contexts() {
     ),
   );
   $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'block-16' => array(
-          'module' => 'block',
-          'delta' => 16,
-          'region' => 'topbar',
-          'weight' => '-10',
-        ),
-        'block-23' => array(
-          'module' => 'block',
-          'delta' => 23,
-          'region' => 'header',
-          'weight' => '-10',
-        ),
-        'block-18' => array(
-          'module' => 'block',
-          'delta' => 18,
-          'region' => 'sidebar_second',
-          'weight' => '-10',
-        ),
-      ),
+    'theme' => array(
+      'title' => 'Notes & Experiments',
+      'subtitle' => '',
+    ),
+    'theme_html' => array(
+      'class' => 'experiment',
     ),
   );
   $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('category');
   $export['experiment'] = $context;
 
   return $export;
