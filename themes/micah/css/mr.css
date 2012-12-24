@@ -96,6 +96,7 @@ header #section-info img {
 header #section-info h1.section {
   font-size: 78px;
   font-family: Georgia, "Times New Roman", sans-serif;
+  font-size: 18px;
   line-height: 1em;
   text-transform: none; }
   header #section-info h1.section a {
@@ -103,6 +104,9 @@ header #section-info h1.section {
     text-decoration: none; }
 
 @media (min-width: 960px) {
+  header #section-info h1.section {
+    font-size: 78px; }
+
   header h1.section:before {
     content: url(../images/curve.jpg);
     padding: 0 20px 0px 0;

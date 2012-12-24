@@ -84,6 +84,7 @@ header {
     h1.section {
       @include H1;
       @include Serif;   
+      font-size:18px;
       line-height:1em; 
       text-transform: none; 
       a {
@@ -96,6 +97,9 @@ header {
 
 
 @media (min-width:960px) {
+  header #section-info h1.section {
+    font-size:78px;
+  }
   header h1.section:before {
     content: url(../images/curve.jpg);
     padding:0 20px 0px 0;
