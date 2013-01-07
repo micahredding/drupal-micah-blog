@@ -107,16 +107,16 @@ header #section-info h1.section {
   header #section-info h1.section {
     font-size: 78px; }
 
-  header h1.section:before {
-    content: url(../images/curve.jpg);
-    padding: 0 20px 0px 0;
-    float: left; }
-
   header h1.section:after {
     clear: both;
     display: block;
     float: none;
     content: ' '; }
+
+  .life header h1.section:before {
+    content: url(../images/curve.jpg);
+    padding: 0 20px 0px 0;
+    float: left; }
 
   .life header h1.section {
     max-width: 500px; }
