@@ -106,8 +106,6 @@ footer {
 
 /* Footer Blocks */
 footer .block {
-  float: left;
-  clear: none !important;
   margin: 20px !important; }
 footer #block-search-form .content {
   padding: 0; }

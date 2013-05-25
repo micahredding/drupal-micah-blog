@@ -95,7 +95,9 @@ header {
   }
 }
 
-
+header #section-info h1.section {
+  font-size: 48px;
+}
 @media (min-width:960px) {
   header #section-info h1.section {
     font-size:78px;
