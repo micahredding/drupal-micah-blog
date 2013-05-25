@@ -77,11 +77,6 @@
         </a>
       </div>
       <?php endif; ?>
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" class="navigation">
-          <?php print render($main_menu); ?>
-        </nav>
-      <?php endif; ?>
     </div>
     <div id="section-info">
       <?php if ($logo): ?>
