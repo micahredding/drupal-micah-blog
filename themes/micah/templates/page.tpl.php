@@ -77,7 +77,7 @@
       <?php endif; ?>
     </div>
     <?php if($page['header']): ?>
-        <?php print $page['header']; ?>
+        <?php print render($page['header']); ?>
     <?php endif; ?>
 
     <div id="section-info">
