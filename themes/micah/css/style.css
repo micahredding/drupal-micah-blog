@@ -1337,7 +1337,7 @@ html.js input.throbbing {
   float: left;
   /* LTR */
   font-size: 0.929em;
-  min-width: 120px; }
+  min-width: 165px; }
 
 .comment-form input,
 .comment-form .form-select {
@@ -1359,7 +1359,7 @@ html.js input.throbbing {
 
 .comment-form .form-type-checkbox,
 .comment-form .form-radios {
-  margin-left: 120px;
+  margin-left: 165px;
   /* LTR */ }
 
 .comment-form .form-type-checkbox label,
@@ -1370,19 +1370,10 @@ html.js input.throbbing {
 .comment-form input.form-file {
   width: auto; }
 
-.no-sidebars .comment-form .form-text {
-  width: 800px; }
-
-.one-sidebar .comment-form .form-text {
-  width: 500px; }
-
-.two-sidebars .comment-form .form-text {
-  width: 320px; }
-
 .comment-form .form-item .description {
   font-size: 0.786em;
   line-height: 1.2;
-  margin-left: 120px;
+  margin-left: 165px;
   /* LTR */ }
 
 #content h2.comment-form {
@@ -1408,7 +1399,7 @@ html.js input.throbbing {
   float: none; }
 
 .filter-wrapper .form-select {
-  min-width: 120px; }
+  min-width: 165px; }
 
 .comment-form fieldset.filter-wrapper .tips {
   font-size: 0.786em; }
