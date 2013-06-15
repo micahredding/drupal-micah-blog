@@ -71,30 +71,20 @@
       <?php if($site_name): ?>
       <div id="site-name">
         <a href="<?php print $base_path; ?>">
-          <?php print $site_name; ?>
+          m/r
         </a>
       </div>
       <?php endif; ?>
     </div>
-    <?php if($page['header']): ?>
-        <?php print render($page['header']); ?>
-    <?php endif; ?>
-
-    <div id="section-info">
-      <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
-      <?php endif; ?>
-      <?php if(isset($section_title)): ?>
-        <h1 class="section title"><?php print $section_title; ?></h1>
-      <?php endif; ?>
-    </div>
-
   </header>
     
-    
-  <div id="page-wrapper"><div id="page">
+  <nav class="site-nav">
+  <?php if($page['header']): ?>
+      <?php print render($page['header']); ?>
+  <?php endif; ?>
+  </nav>
+
+  <div id="page">
 
     <?php print $messages; ?>
 
@@ -135,7 +125,7 @@
     </div></div> <!-- /#main, /#main-wrapper -->
 
 
-  </div></div> <!-- /#page, /#page-wrapper -->
+  </div> <!-- /#page, /#page-wrapper -->
 
   <footer>
     <div class="internal">

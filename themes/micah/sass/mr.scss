@@ -1,7 +1,12 @@
 @import '_define';
 
-body {
+* {
+  @include border-box;  
+}
+body {  
   background:#ffffff;
+  color:#3b3b3b;
+  @include Serif;     
 }
 footer {
   @include Body;
@@ -10,102 +15,32 @@ footer {
   padding:20px; 
 }
 
+a {
+  color:#0071B3;
+  &:hover {
+    color:#018fe2;
+  }
+}
 
 header {
   #site-info {
-    @media (min-width:960px) {
-      position:static;
-      // position:absolute;
-      top:0;
-      left:0;
-    }
-
-    display:block;
-    margin:0 0 40px 0;
-    padding:0;
-    @include clearfix;
-    @include colordrill(#666);
+    @include colordrill(#ccc);
     @include text-decoration-none;
-    @include SanSerif; 
-    @include H3;    
     font-style: normal; 
-    text-transform: lowercase; 
-
-    #site-name {
-      display:block;
-      margin:0 0 0 0;
-      text-align: center;
-      @include H3;   
-      @media (min-width:560px) {
-        display: inline-block;
-      }
-    }
 
     a {
       display:block;
       text-align: center;
-      @media (min-width:560px) {
-        display: inline-block;
-      }      
-      padding:10px 20px; 
-      margin:0px; 
+      padding:0.5em 1em; 
     }  
-
-    nav {
-      display:block;
-      @media (min-width:560px) {
-        display: inline-block;
-      }
-
-
-      ul {
-        margin:0;
-        padding-left:0;
-        li {
-          list-style:none;
-          display: block;
-          padding:0;
-          @media (min-width:560px) {
-            display: inline-block;
-          }
-
-        }
-      }
-    }
-  }
-
-  #section-info {
-    img {
-      width:100%;
-      max-width:250px;
-    }
-
-    h1.section {
-      @include H1;
-      @include Serif;   
-      font-size:18px;
-      line-height:1em; 
-      text-transform: none; 
-      a {
-        color:$black; 
-        text-decoration: none;
-      }
-    }
   }
 }
 
-header #section-info h1.section {
-  font-size: 48px;
-}
-@media (min-width:960px) {
-  header #section-info h1.section {
-    font-size:78px;
-  }
-  header h1.section:after {
-    clear:both;
-    display: block;
-    float: none;
-    content: ' ';
+.region-header {
+  .block {
+    h2 {
+      display: none;
+    }
   }
 }
 
@@ -142,6 +77,10 @@ hr {
     padding:0px 20px; 
     text-align: center;
   }
+}
+
+.sidebar .block {
+  border:none;
 }
 
 .sidebar #block-views-slideshow-block {
@@ -184,5 +123,5 @@ hr {
 
 /* Styles */
 .chimp-button {
-  @include chimp-button;
+  @include button;
 }

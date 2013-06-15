@@ -10,9 +10,9 @@ $grey:$midGrey;
 $white:#FFFFFF;
 
 @mixin Serif {font-family: Georgia, "Times New Roman", sans-serif;}
-@mixin SanSerif {font-family: Arial, sans-serif;}
+@mixin SanSerif {font-family: Helvetica, Arial, sans-serif;}
 @mixin Center {margin:0 auto;}
-@mixin FullWidth {max-width:960px;}
+@mixin FullWidth {max-width:60px;}
 
 @mixin H1 {font-size:78px;}
 @mixin H2 {font-size:36px;}
@@ -80,26 +80,16 @@ $white:#FFFFFF;
 /* Layout */
 
 @mixin Fluid {
-  margin:0 auto; 
-  max-width:960px;
+  max-width:600px;
+  margin:0 20px;
+  @media(min-width:600px) {
+    margin:0 auto; 
+  }
 }
-
-// @mixin onewidth {
-//   width:100%;
-//   max-width:960px;
-//   margin:0 auto;
-// }
-
-// @mixin twowidth {
-//   @include onewidth; 
-// }
-
-
-
 
 /* Styles */
 
-@mixin chimp-button {
+@mixin button {
   @include colordrill(#ffffff);
   background-color: #aaaaaa; 
 

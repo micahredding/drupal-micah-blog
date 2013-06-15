@@ -7,20 +7,30 @@ body {
 }
 
 header {
-  @include clearfix;
-  h1 {
-    margin:0;
-    margin-bottom: 40px;
-  }
-  #section-info {
-    @include Fluid;
-    padding:0 20px;
+  margin:0 auto;   
+  @media(min-width:600px) {
+    position: fixed;
+    top:0;
+    left:0;
   }
 }
-#page-wrapper {
-  @include clearfix;
-  @include Fluid;
-  padding:0 20px;
+nav.site-nav {
+  margin:0.5em 1em;
+  @media(min-width:960px) {
+    position: fixed;
+    top:0;
+    right:0;
+  }
+}
+
+#page {
+  max-width:600px;
+  margin:2em;
+  @media(min-width:600px) {
+    margin:4em auto; 
+  }
+
+
   background:none;
   h1 {
     margin:0;
@@ -70,17 +80,17 @@ footer {
 /* Sidebars */
 body.one-sidebar {
   @media (min-width:960px) {
-    #content, .sidebar {
-      @include border-box;
-    }
     #content {
-      width:77%;
-      float:left;
-      padding-right:40px;
+      // width:77%;
+      // float:left;
+      // padding-right:40px;
     }
     .sidebar {
-      width:23%;
-      float:left;
+      // width:23%;
+      // float:left;
+      // position: fixed;
+      // top:0;
+      // right:0;
     }
   }
 }

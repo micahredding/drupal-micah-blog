@@ -7,54 +7,37 @@ body {
   padding: 0; }
 
 header {
-  /**
-  * For IE 6/7 only
-  * Include this rule to trigger hasLayout and contain floats.
-  */
-  *zoom: 1;
-  /* For modern browsers */ }
-  header:before, header:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */ }
-  header:after {
-    clear: both; }
-  header h1 {
-    margin: 0;
-    margin-bottom: 40px; }
-  header #section-info {
-    margin: 0 auto;
-    max-width: 960px;
-    padding: 0 20px; }
+  margin: 0 auto; }
+  @media (min-width: 600px) {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0; } }
 
-#page-wrapper {
-  /**
-  * For IE 6/7 only
-  * Include this rule to trigger hasLayout and contain floats.
-  */
-  *zoom: 1;
-  /* For modern browsers */
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 20px;
+nav.site-nav {
+  margin: 0.5em 1em; }
+  @media (min-width: 960px) {
+    nav.site-nav {
+      position: fixed;
+      top: 0;
+      right: 0; } }
+
+#page {
+  max-width: 600px;
+  margin: 2em;
   background: none; }
-  #page-wrapper:before, #page-wrapper:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */ }
-  #page-wrapper:after {
-    clear: both; }
-  #page-wrapper h1 {
+  @media (min-width: 600px) {
+    #page {
+      margin: 4em auto; } }
+  #page h1 {
     margin: 0;
     padding: 0; }
-  #page-wrapper h2 {
+  #page h2 {
     margin: 0;
     padding: 0; }
-  #page-wrapper #page {
+  #page #page {
     background: none; }
-    #page-wrapper #page #main-wrapper #content h1 {
+    #page #page #main-wrapper #content h1 {
       margin-bottom: 20px; }
 
 footer {
@@ -78,8 +61,11 @@ footer {
   footer:after {
     clear: both; }
   footer .internal {
-    margin: 0 auto;
-    max-width: 960px; }
+    max-width: 600px;
+    margin: 0 20px; }
+    @media (min-width: 600px) {
+      footer .internal {
+        margin: 0 auto; } }
 
 /* Internal Layout */
 #main-wrapper #main {
@@ -88,21 +74,6 @@ footer {
     padding-top: 0; }
 
 /* Sidebars */
-@media (min-width: 960px) {
-  body.one-sidebar #content, body.one-sidebar .sidebar {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    /* Firefox */
-    -webkit-box-sizing: border-box;
-    /* Safari */ }
-  body.one-sidebar #content {
-    width: 77%;
-    float: left;
-    padding-right: 40px; }
-  body.one-sidebar .sidebar {
-    width: 23%;
-    float: left; } }
-
 /* Footer Blocks */
 footer .block {
   margin: 20px !important; }
