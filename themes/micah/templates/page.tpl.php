@@ -66,8 +66,6 @@
  * @see template_process()
  */
 ?>
-
-
   <header>
     <div id="site-info">
       <?php if($site_name): ?>
@@ -78,6 +76,10 @@
       </div>
       <?php endif; ?>
     </div>
+    <?php if($page['header']): ?>
+        <?php print $page['header']; ?>
+    <?php endif; ?>
+
     <div id="section-info">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -93,12 +95,6 @@
     
     
   <div id="page-wrapper"><div id="page">
-
-
-
-    <?php if (FALSE && $breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
 
     <?php print $messages; ?>
 
