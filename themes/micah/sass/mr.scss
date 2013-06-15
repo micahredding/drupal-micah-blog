@@ -79,8 +79,11 @@ hr {
   }
 }
 
-.sidebar .block {
-  border:none;
+.sidebar {
+  background:#fcfcfc;
+  .block {
+    border:none;
+  }
 }
 
 .sidebar #block-views-slideshow-block {

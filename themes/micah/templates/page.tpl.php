@@ -110,22 +110,23 @@
         </div>
       </div> <!-- /#content -->
 
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_first']); ?>
-        </div></div> <!-- /.section, /#sidebar-first -->
-      <?php endif; ?>
-
-      <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second -->
-      <?php endif; ?>
-
     </div></div> <!-- /#main, /#main-wrapper -->
 
 
   </div> <!-- /#page, /#page-wrapper -->
+
+  <?php if ($page['sidebar_first']): ?>
+    <div id="sidebar-first" class="column sidebar"><div class="section">
+      <?php print render($page['sidebar_first']); ?>
+    </div></div> <!-- /.section, /#sidebar-first -->
+  <?php endif; ?>
+
+  <?php if ($page['sidebar_second']): ?>
+    <div id="sidebar-second" class="column sidebar"><div class="section">
+      <?php print render($page['sidebar_second']); ?>
+    </div></div> <!-- /.section, /#sidebar-second -->
+  <?php endif; ?>
+
 
   <footer>
     <div class="internal">

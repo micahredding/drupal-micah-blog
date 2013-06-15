@@ -86,8 +86,10 @@ hr {
     padding: 0px 20px;
     text-align: center; }
 
-.sidebar .block {
-  border: none; }
+.sidebar {
+  background: #fcfcfc; }
+  .sidebar .block {
+    border: none; }
 
 .sidebar #block-views-slideshow-block {
   margin: 0 0 10px;
