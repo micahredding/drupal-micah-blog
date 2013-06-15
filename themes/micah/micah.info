@@ -1,7 +1,7 @@
 name = Micah
-description = This theme demonstrates Drupal's default HTML markup and CSS styles. To learn how to build your own theme and override Drupal's default code, see the <a href="http://drupal.org/theme-guide">Theming Guide</a>.
-package = Core
-version = VERSION
+description = Customized version of Stark.
+package = _custom
+version = 1.0
 core = 7.x
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/colors.css
@@ -22,10 +22,3 @@ regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 
 regions[footer] = Footer
-
-
-; Information added by drupal.org packaging script on 2011-07-28
-version = "7.7"
-project = "drupal"
-datestamp = "1311813879"
-
