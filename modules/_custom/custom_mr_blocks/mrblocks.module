@@ -28,9 +28,12 @@ function mrblocks_block_info() {
       'cache' => DRUPAL_NO_CACHE,
     ),
 
+    'mr-nav' => array(
+      'info' => t('MR Custom Nav'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
   );
 }
-
 
 function mrblocks_block_view($id) {
   switch($id) {
@@ -79,10 +82,23 @@ function mrblocks_block_view($id) {
         'content' => 'Random musings, unconventional theological reflections,   and memos from the edge of my human experience.',
       );
     break;
+    case 'mr-nav':
+      $href = '';
+      if(context_isset('context','theology')) {
+        $href = 'http://micahredding.com/xn';
+      } else {
+        $href = 'http://micahredding.com/curve';
+      }
 
+      $img = base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/mail.png';
+
+      return array(
+        'subject' => NULL,
+        'content' => theme('item_list', array('items' => array(
+          'Twitter' => tweet_to_twitter('Twitter'),
+          'Email' => '<a href="' . $href . '"><img src="' . $img . '" /> Get essays by email</a>',
+        ))),
+      );
+    break;
   }
 }
-
-
-
-

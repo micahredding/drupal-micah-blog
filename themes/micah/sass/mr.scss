@@ -14,14 +14,16 @@ footer {
   background: #000000;
   padding:20px; 
 }
-
 a {
   color:#0071B3;
   &:hover {
     color:#018fe2;
   }
 }
-
+.block ul, .block ol {
+  list-style-position: inside;
+  padding-left:0;
+}
 header {
   #site-info {
     @include colordrill(#ccc);
