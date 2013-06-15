@@ -42,50 +42,18 @@ nav.site-nav {
 
 .sidebar .block {
   max-width: 600px;
-  padding: 2em; }
+  padding: 2em;
+  margin-bottom: 0; }
   @media (min-width: 600px) {
     .sidebar .block {
       margin: 0em auto;
       padding: 2em 0; } }
 
-footer {
-  /**
-  * For IE 6/7 only
-  * Include this rule to trigger hasLayout and contain floats.
-  */
-  *zoom: 1;
-  /* For modern browsers */
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  /* Firefox */
-  -webkit-box-sizing: border-box;
-  /* Safari */
-  padding: 0 20px; }
-  footer:before, footer:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */ }
-  footer:after {
-    clear: both; }
-  footer .internal {
-    max-width: 600px;
-    margin: 0 20px; }
-    @media (min-width: 600px) {
-      footer .internal {
-        margin: 0 auto; } }
-
-/* Internal Layout */
-#main-wrapper #main {
-  margin-top: 0; }
-  #main-wrapper #main .sidebar .section {
-    padding-top: 0; }
-
 /* Footer Blocks */
 footer .block, footer .google-plus {
   max-width: 600px;
-  padding: 2em; }
+  padding: 1em 2em; }
   @media (min-width: 600px) {
     footer .block, footer .google-plus {
       margin: 0em auto;
-      padding: 2em 0; } }
+      padding: 1em 0; } }

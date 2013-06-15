@@ -56,33 +56,11 @@ nav.site-nav {
   .block {
     max-width: 600px;
     padding:2em;
+    margin-bottom: 0;
     @media(min-width:600px) {
       margin:0em auto; 
       padding:2em 0;
     }
-  }
-}
-footer {
-  @include clearfix;
-  @include border-box;
-  padding:0 20px;
-
-  .internal {
-    @include Fluid;
-  }
-}
-
-/* Internal Layout */
-#main-wrapper {
-  #main {
-    margin-top:0;
-
-    .sidebar {
-      .section {
-        padding-top:0;
-      }
-    }
-
   }
 }
 
@@ -90,10 +68,10 @@ footer {
 footer {
   .block, .google-plus {
     max-width: 600px;
-    padding:2em;
+    padding:1em 2em;
     @media(min-width:600px) {
       margin:0em auto; 
-      padding:2em 0;
+      padding:1em 0;
     }
   }
 }
