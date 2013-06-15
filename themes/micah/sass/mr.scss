@@ -23,9 +23,8 @@ header {
     display:block;
     margin:0 0 40px 0;
     padding:0;
-    background: #333333;
     @include clearfix;
-    @include colordrill(#ffffff);
+    @include colordrill(#666);
     @include text-decoration-none;
     @include SanSerif; 
     @include H3;    
@@ -108,29 +107,7 @@ header #section-info h1.section {
     float: none;
     content: ' ';
   }
-  .life header h1.section:before {
-    content: url(../images/curve.jpg);
-    padding:0 20px 0px 0;
-    float:left;
-  }
-  .life header h1.section {
-    max-width:500px;
-  }  
-  .theology header h1.section:before {
-    content: url(../images/cross.jpg);
-    padding:0 20px 0px 0;
-    float:left;
-  }
-  .experiment header h1.section:before {
-    content: url(../images/notes.jpg);
-    padding:0 20px 0px 0;
-  }
 }
-
-
-
-
-
 
 .tabs {
   margin:0;
