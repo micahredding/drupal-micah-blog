@@ -71,7 +71,7 @@
       <?php if($site_name): ?>
       <div id="site-name">
         <a href="<?php print $base_path; ?>">
-          m/r
+          <span class="text-logo">m/r</span><span class="text-text">micah/redding</span>
         </a>
       </div>
       <?php endif; ?>
@@ -130,9 +130,11 @@
 
   <footer>
     <div class="internal">
-    <?php print render($page['footer']); ?>
-    <div class="google-plus"><a href="https://plus.google.com/110800681150805455169?
- rel=author">Google +</a></div>
+      <?php print render($page['footer']); ?>
+      <div class="google-plus">
+        <a href="http://micahredding.com/blog/rss.xml">RSS</a>, 
+        <a href="https://plus.google.com/110800681150805455169?rel=author">Google +</a> 
+      </div>
     </div>
   </footer>
 

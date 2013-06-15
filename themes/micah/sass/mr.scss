@@ -20,7 +20,7 @@ a {
     color:#018fe2;
   }
 }
-.block ul, .block ol {
+.sidebar ul, .sidebar ol {
   list-style-position: inside;
   padding-left:0;
 }
@@ -38,6 +38,21 @@ header {
   }
 }
 
+#site-name {
+  a {
+    .text-text {
+      display: none;
+    }
+    &:hover {
+      .text-logo {
+        display: none;
+      }
+      .text-text {
+        display: inline-block;
+      }
+    }
+  } 
+}
 .region-header {
   .block {
     h2 {

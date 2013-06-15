@@ -30,7 +30,7 @@ a {
   a:hover {
     color: #018fe2; }
 
-.block ul, .block ol {
+.sidebar ul, .sidebar ol {
   list-style-position: inside;
   padding-left: 0; }
 
@@ -54,6 +54,13 @@ header #site-info {
     display: block;
     text-align: center;
     padding: 0.5em 1em; }
+
+#site-name a .text-text {
+  display: none; }
+#site-name a:hover .text-logo {
+  display: none; }
+#site-name a:hover .text-text {
+  display: inline-block; }
 
 .region-header .block h2 {
   display: none; }
