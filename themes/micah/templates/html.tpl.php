@@ -52,6 +52,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="alternate" type="application/rss+xml" title="Micah Redding: life on the curve" href="http://micahredding.com/blog/rss.xml" />  
   <link rel="shortcut icon" href="http://micahredding.com/favicon.ico">  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
