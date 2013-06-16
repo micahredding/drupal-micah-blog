@@ -77,8 +77,11 @@ a {
   #site-name a {
     display:block;
     padding:0.5em 2em;
+    .text-logo {
+      font-size: 1.5em;      
+    }
     .text-text {
-        display: none;
+      display: none;
     }     
   }  
 }

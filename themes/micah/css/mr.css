@@ -68,6 +68,8 @@ a {
   #header #site-name a {
     display: block;
     padding: 0.5em 2em; }
+    #header #site-name a .text-logo {
+      font-size: 1.5em; }
     #header #site-name a .text-text {
       display: none; }
 

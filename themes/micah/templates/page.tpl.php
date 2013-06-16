@@ -69,7 +69,7 @@
   <header id="header">
     <div id="site-name">
       <a href="<?php print $base_path; ?>">
-        <span class="text-logo">m/r</span><span class="text-text">micah/redding</span>
+        <span class="text-logo">m</span><span class="text-text">micah/redding</span>
       </a>
     </div>
     <ul>
