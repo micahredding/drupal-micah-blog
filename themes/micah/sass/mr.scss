@@ -25,33 +25,40 @@ a {
   padding-left:0;
 }
 header {
-  #site-info {
     @include colordrill(#ccc);
     @include text-decoration-none;
-    font-style: normal; 
 
-    a {
-      display:block;
-      text-align: center;
-      padding:0.5em 1em; 
-    }  
   }
 }
 
-#site-name {
+#site-info {
+  #site-name a {
+    display:block;
+    padding:0.5em 1em; 
+  }  
+  ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+  }
   a {
-    .text-text {
+    padding:0 1em;
+  }
+  .text-text {
+    display: inline-block;
+  }
+
+  .text-text, ul {
+    display: none;
+  }
+  &:hover {
+    .text-logo {
       display: none;
     }
-    &:hover {
-      .text-logo {
-        display: none;
-      }
-      .text-text {
-        display: inline-block;
-      }
+    ul {
+      display: block;
     }
-  } 
+  }  
 }
 .region-header {
   .block {

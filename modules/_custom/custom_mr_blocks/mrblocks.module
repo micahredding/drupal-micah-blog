@@ -83,22 +83,52 @@ function mrblocks_block_view($id) {
       );
     break;
     case 'mr-nav':
-      $href = '';
-      if(context_isset('context','theology')) {
-        $href = 'http://micahredding.com/xn';
-      } else {
-        $href = 'http://micahredding.com/curve';
-      }
-
-      $img = base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/mail.png';
-
       return array(
         'subject' => NULL,
         'content' => theme('item_list', array('items' => array(
-          'Twitter' => tweet_to_twitter('Twitter'),
-          'Email' => '<a href="' . $href . '"><img src="' . $img . '" /> Get essays by email</a>',
+          'Twitter' => _prepare_tweet(),
+          'Email' => _prepare_subscribe(),
         ))),
       );
     break;
   }
+}
+
+function _prepare_tweet() {
+  $page_title = drupal_get_title();
+  if(empty($page_title)) {
+    $page_title = 'Micah Redding: Life on the Curve';
+  }
+  $url = url(drupal_lookup_path('alias',current_path()), array('absolute' => TRUE));
+  $status = '"' . $page_title . '" ' . $url . ' via @micahtredding';
+  $img = base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/twitter.png';
+
+  $array = array();
+  $array['title'] = '<img src="'. $img .'" alt="Post to Twitter" title="Post to Twitter"> Post to Twitter';
+  $array['href'] = 'http://twitter.com/';
+  $array['attributes'] = array(
+    'class' => 'tweet',
+    'rel' => 'nofollow',
+    'target' => '_blank',
+  );
+  $array['query'] = array(
+    'status' => $status,
+  );
+  $array['html'] = TRUE;
+
+  $tweet = l($array['title'], $array['href'], array('attributes' => $array['attributes'], 'query' => $array['query'], 'absolute' => TRUE, 'html' => $array['html']));
+  return $tweet;
+}
+
+function _prepare_subscribe() {
+  $href = '';
+  if(context_isset('context','theology')) {
+    $href = 'http://micahredding.com/xn';
+  } else {
+    $href = 'http://micahredding.com/curve';
+  }
+
+  $img = base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/mail.png';
+
+  return '<a href="' . $href . '"><img src="' . $img . '" /> Get essays by email</a>';
 }

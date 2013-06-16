@@ -68,13 +68,15 @@
 ?>
   <header>
     <div id="site-info">
-      <?php if($site_name): ?>
       <div id="site-name">
         <a href="<?php print $base_path; ?>">
           <span class="text-logo">m/r</span><span class="text-text">micah/redding</span>
         </a>
       </div>
-      <?php endif; ?>
+      <ul>
+        <li><a href="">about</a></li>
+        <li><a href="http://twitter.com/micahtredding">twitter</a></li>
+      </ul>
     </div>
   </header>
     

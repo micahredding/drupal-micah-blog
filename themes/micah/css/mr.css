@@ -52,15 +52,22 @@ header #site-info {
       text-decoration: none; }
   header #site-info a {
     display: block;
-    text-align: center;
     padding: 0.5em 1em; }
 
-#site-name a .text-text {
+#site-info .text-text, #site-info ul {
   display: none; }
-#site-name a:hover .text-logo {
+#site-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+#site-info a {
+  padding: 0 1em; }
+#site-info:hover .text-logo {
   display: none; }
-#site-name a:hover .text-text {
+#site-info:hover .text-text {
   display: inline-block; }
+#site-info:hover ul {
+  display: block; }
 
 .region-header .block h2 {
   display: none; }
