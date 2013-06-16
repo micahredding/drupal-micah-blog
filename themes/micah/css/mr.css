@@ -122,6 +122,8 @@ hr {
   background: #fcfcfc; }
   .sidebar .block {
     border: none; }
+  .sidebar#sidebar-second {
+    background: #eeeeee; }
 
 .sidebar #block-views-slideshow-block {
   margin: 0 0 10px;
