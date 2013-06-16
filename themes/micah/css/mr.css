@@ -34,43 +34,44 @@ a {
   list-style-position: inside;
   padding-left: 0; }
 
-header #site-info {
-  color: #cccccc;
+#header {
   text-decoration: none;
-  font-style: normal; }
-  header #site-info:hover {
-    color: #cccccc; }
-  header #site-info a {
-    color: #cccccc; }
-    header #site-info a:hover {
-      color: #cccccc; }
-  header #site-info:hover {
+  margin: 1em;
+  background: #333333; }
+  #header:hover {
     text-decoration: none; }
-  header #site-info a {
+  #header a {
     text-decoration: none; }
-    header #site-info a:hover {
+    #header a:hover {
       text-decoration: none; }
-  header #site-info a {
+  #header ul {
     display: block;
-    padding: 0.5em 1em; }
-
-#site-info .text-text, #site-info ul {
-  display: none; }
-#site-info ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-#site-info a {
-  padding: 0 1em; }
-#site-info:hover .text-logo {
-  display: none; }
-#site-info:hover .text-text {
-  display: inline-block; }
-#site-info:hover ul {
-  display: block; }
-
-.region-header .block h2 {
-  display: none; }
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  @media (min-width: 1100px) {
+    #header {
+      background: #ffffff; }
+      #header ul {
+        display: none; }
+      #header:hover, #header.open {
+        background: #333333; }
+        #header:hover ul, #header.open ul {
+          display: block; }
+        #header:hover a, #header.open a {
+          color: #cccccc; } }
+  #header a {
+    display: block;
+    padding: 0.5em 2em;
+    color: #cccccc; }
+    #header a:hover {
+      background: #000000;
+      color: #cccccc; }
+  #header #site-name a {
+    display: block;
+    padding: 0.5em 2em; }
+    #header #site-name a .text-text {
+      display: none; }
 
 .tabs {
   margin: 0; }

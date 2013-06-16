@@ -7,8 +7,7 @@ body {
 }
 
 header {
-  margin:0 0 0 1em;  
-  display: inline-block; 
+  display: block; 
   @media(min-width:1100px) {
     position: fixed;
     top:0;
@@ -17,13 +16,16 @@ header {
 }
 nav.site-nav {
   display: inline-block;
-  margin:0 2em 0 0;
+  margin:0.5em 2em;
   .block {
     float:none;
     margin:0 0;
     li {
       display: inline-block;
-      padding:0 2em 0 0;
+      a {
+        display: block;
+        padding:0.5em 2em;
+      }
       @media(min-width:1100px) {
         display: block;
       }

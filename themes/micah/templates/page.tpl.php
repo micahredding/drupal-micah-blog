@@ -66,18 +66,19 @@
  * @see template_process()
  */
 ?>
-  <header>
-    <div id="site-info">
-      <div id="site-name">
-        <a href="<?php print $base_path; ?>">
-          <span class="text-logo">m/r</span><span class="text-text">micah/redding</span>
-        </a>
-      </div>
-      <ul>
-        <li><a href="http://micahredding.com/blog/2012/01/15/micah-redding">about</a></li>
-        <li><a href="http://twitter.com/micahtredding">twitter</a></li>
-      </ul>
+  <header id="header">
+    <div id="site-name">
+      <a href="<?php print $base_path; ?>">
+        <span class="text-logo">m/r</span><span class="text-text">micah/redding</span>
+      </a>
     </div>
+    <ul>
+      <li><a href="http://micahredding.com/blog/life">Life on the Curve</a></li>      
+      <li><a href="http://micahredding.com/blog/theology">Christianity Against Religion</a></li>      
+      <li><a href="http://micahredding.com/blog/transhumanism">The Singularity &amp; Transhumanism</a></li>      
+      <li><a href="http://micahredding.com/blog/2012/01/15/micah-redding">About Micah Redding</a></li>
+      <li><a href="http://twitter.com/micahtredding">Twitter</a></li>
+    </ul>
   </header>
     
   <nav class="site-nav">
