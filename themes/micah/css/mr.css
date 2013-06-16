@@ -74,6 +74,17 @@ a {
 #page {
   background: #ffffff; }
 
+#comments h2.title {
+  display: none; }
+#comments form {
+  margin-top: 3em; }
+#comments .description {
+  display: none; }
+#comments .form-item-notify {
+  margin-top: 2em; }
+#comments .form-radios {
+  margin-bottom: 2em; }
+
 footer {
   font-size: 12px;
   color: white;

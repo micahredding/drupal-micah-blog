@@ -677,12 +677,13 @@ ul.links {
   display: table;
   vertical-align: top; }
 
-.comment .attribution {
-  display: table-cell;
-  padding: 0 30px 0 0;
-  /* LTR */
-  vertical-align: top;
-  overflow: hidden; }
+@media (min-width: 600px) {
+  .comment .attribution {
+    display: table-cell;
+    padding: 0 30px 0 0;
+    /* LTR */
+    vertical-align: top;
+    overflow: hidden; } }
 
 .comment .attribution img {
   margin: 0;
@@ -720,10 +721,12 @@ ul.links {
 .comment .comment-text {
   padding: 10px 25px;
   border: 1px solid #d3d7d9;
-  display: table-cell;
   vertical-align: top;
   position: relative;
   width: 100%; }
+  @media (min-width: 600px) {
+    .comment .comment-text {
+      display: table-cell; } }
 
 .comment .indented {
   margin-left: 40px;
@@ -762,10 +765,6 @@ ul.links {
   text-shadow: 0 1px 0 #fff;
   font-size: 1.071em;
   line-height: 1.2; }
-
-.sidebar .block .content {
-  font-size: 0.914em;
-  line-height: 1.4; }
 
 .sidebar tbody {
   border: none; }
@@ -832,8 +831,7 @@ ul.links {
 /* ------------------ Footer ------------------ */
 #footer-wrapper {
   color: #c0c0c0;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 0.857em; }
+  color: rgba(255, 255, 255, 0.65); }
 
 #footer-wrapper a {
   color: #fcfcfc;
@@ -1354,13 +1352,7 @@ html.js input.throbbing {
 .comment-form .form-radios,
 .comment-form .form-type-checkbox,
 .comment-form .form-select {
-  margin-bottom: 10px;
-  overflow: hidden; }
-
-.comment-form .form-type-checkbox,
-.comment-form .form-radios {
-  margin-left: 165px;
-  /* LTR */ }
+  margin-bottom: 10px; }
 
 .comment-form .form-type-checkbox label,
 .comment-form .form-radios label {

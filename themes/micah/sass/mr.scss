@@ -85,6 +85,23 @@ a {
 #page {
   background: #ffffff;
 }
+#comments {
+  h2.title {
+    display: none;
+  }
+  form {
+    margin-top:3em;
+  }  
+  .description {
+    display: none;
+  }
+  .form-item-notify {
+    margin-top:2em;
+  }
+  .form-radios {
+    margin-bottom: 2em;
+  }
+}
 footer {
   @include Body;
   @include colordrill(#ffffff);
