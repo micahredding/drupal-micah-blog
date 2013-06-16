@@ -66,10 +66,6 @@
  * @see template_process()
  */
 ?>
-  <div id="header-image">
-    <img src="<?php print $base_path . path_to_theme(); ?>/images/sandy_flare_desktop.jpg" />
-  </div>
-
   <header id="header">
     <div id="site-name">
       <a href="<?php print $base_path; ?>">
