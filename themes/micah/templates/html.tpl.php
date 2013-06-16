@@ -51,7 +51,7 @@
   <?php print $scripts; ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="alternate" type="application/rss+xml" title="Micah Redding: life on the curve" href="http://micahredding.com/blog/rss.xml" />  
-  <link rel="shortcut icon" href="favicon.ico">  
+  <link rel="shortcut icon" href="http://micahredding.com/favicon.ico">  
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
