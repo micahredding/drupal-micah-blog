@@ -118,3 +118,18 @@ $white:#FFFFFF;
     background-color:#777777;    
   }
 }
+
+@mixin closed-menu {
+  ul {
+    display: none;
+  }  
+}
+@mixin opened-menu {
+  background: #333333;
+  ul {
+    display: block;
+  }
+  a {
+    color:#cccccc;
+  }
+}
