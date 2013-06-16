@@ -35,6 +35,9 @@ a {
     ul {
       display: none;
     }
+    #site-name a {
+      background: #333333 url(../images/mobile_menu.png) no-repeat 95% center;
+    }
     &:hover, &.open {
       background: #333333;
       ul {
@@ -43,10 +46,16 @@ a {
       a {
         color:#cccccc;
       }
+      #site-name a {
+        background: #333333 url(../images/mobile_menu.png) no-repeat 95% center;
+      }
     }
   }
   @media (min-width:1100px) {
     background: none;
+    #site-name a {
+      background: none;
+    }
     ul {
       display: none;
     }
@@ -66,7 +75,7 @@ a {
     padding:0.5em 2em;
     color:#cccccc;
     &:hover {
-      background: #000000;
+      background-color: #000000;
       color:#cccccc;
     }
   }
