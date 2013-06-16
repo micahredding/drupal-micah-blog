@@ -32,11 +32,11 @@ a {
   }
 
   @media (min-width:0) {
-    ul {
-      display: none;
-    }
     #site-name a {
       background: #333333 url(../images/mobile_menu.png) no-repeat 95% center;
+    }
+    ul {
+      display: none;
     }
     &:hover, &.open {
       background: #333333;
@@ -50,24 +50,17 @@ a {
         background: #333333 url(../images/mobile_menu.png) no-repeat 95% center;
       }
     }
+    &.open {
+      #site-name a {
+        background-color:#000000;
+      }
+    }
   }
   @media (min-width:1100px) {
     background: none;
     #site-name a {
       background: none;
     }
-    ul {
-      display: none;
-    }
-    &:hover, &.open {
-      background: #333333;
-      ul {
-        display: block;
-      }
-      a {
-        color:#cccccc;
-      }
-    }    
   }
 
   a {
