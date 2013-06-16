@@ -74,7 +74,7 @@
         </a>
       </div>
       <ul>
-        <li><a href="">about</a></li>
+        <li><a href="http://micahredding.com/blog/2012/01/15/micah-redding">about</a></li>
         <li><a href="http://twitter.com/micahtredding">twitter</a></li>
       </ul>
     </div>
