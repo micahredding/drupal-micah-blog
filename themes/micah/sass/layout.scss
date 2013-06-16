@@ -5,13 +5,36 @@ body {
   margin:0; 
   padding:0;
 }
-
 header {
   display: block; 
   @media(min-width:1100px) {
     position: fixed;
     top:0;
     left:0;
+  }
+}
+#header-image {
+  overflow: hidden;
+  display: none;
+
+  max-height: 0;
+  @media (min-height:300px) {
+    max-height:200px;
+  }
+  @media (min-height:450px) {
+    max-height:300px;
+  }
+  @media (min-height:600px) {
+    max-height:400px;
+  }
+  @media (min-height:750px) {
+    max-height:500px;
+  }
+  @media (min-height:900px) {
+    max-height:600px;
+  }
+  @media (min-height:1050px) {
+    max-height:700px;
   }
 }
 nav.site-nav {
@@ -38,6 +61,13 @@ nav.site-nav {
     position: fixed;
     top:0;
     right:0;
+  }
+}
+
+#header-image {
+  img {
+    width:100%;
+    height:auto;
   }
 }
 

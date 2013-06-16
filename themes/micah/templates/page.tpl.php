@@ -66,6 +66,10 @@
  * @see template_process()
  */
 ?>
+  <div id="header-image">
+    <img src="<?php print $base_path . path_to_theme(); ?>/images/sandy_flare_desktop.jpg" />
+  </div>
+
   <header id="header">
     <div id="site-name">
       <a href="<?php print $base_path; ?>">
@@ -80,7 +84,7 @@
       <li><a href="http://twitter.com/micahtredding">Twitter</a></li>
     </ul>
   </header>
-    
+
   <nav class="site-nav">
   <?php if($page['header']): ?>
       <?php print render($page['header']); ?>
@@ -129,7 +133,6 @@
       <?php print render($page['sidebar_second']); ?>
     </div></div> <!-- /.section, /#sidebar-second -->
   <?php endif; ?>
-
 
   <footer>
     <div class="internal">

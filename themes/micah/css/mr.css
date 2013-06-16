@@ -13,18 +13,6 @@ body {
   color: #3b3b3b;
   font-family: Georgia, "Times New Roman", sans-serif; }
 
-footer {
-  font-size: 12px;
-  color: white;
-  background: #000000;
-  padding: 20px; }
-  footer:hover {
-    color: white; }
-  footer a {
-    color: white; }
-    footer a:hover {
-      color: white; }
-
 a {
   color: #0071B3; }
   a:hover {
@@ -49,9 +37,18 @@ a {
     list-style: none;
     margin: 0;
     padding: 0; }
+  @media (min-width: 0) {
+    #header ul {
+      display: none; }
+    #header:hover, #header.open {
+      background: #333333; }
+      #header:hover ul, #header.open ul {
+        display: block; }
+      #header:hover a, #header.open a {
+        color: #cccccc; } }
   @media (min-width: 1100px) {
     #header {
-      background: #ffffff; }
+      background: none; }
       #header ul {
         display: none; }
       #header:hover, #header.open {
@@ -72,6 +69,21 @@ a {
     padding: 0.5em 2em; }
     #header #site-name a .text-text {
       display: none; }
+
+#page {
+  background: #ffffff; }
+
+footer {
+  font-size: 12px;
+  color: white;
+  background: #000000;
+  padding: 20px; }
+  footer:hover {
+    color: white; }
+  footer a {
+    color: white; }
+    footer a:hover {
+      color: white; }
 
 .tabs {
   margin: 0; }
@@ -138,38 +150,3 @@ hr {
   .one-sidebar .comment-form .form-select {
     display: inline-block;
     width: auto; } }
-/* Styles */
-.chimp-button {
-  color: white;
-  background-color: #aaaaaa;
-  display: block;
-  margin: 0 5px 10px 0;
-  padding: 0 22px;
-  width: auto;
-  height: 32px;
-  clear: both;
-  border: 0 none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
-  text-align: center;
-  text-decoration: none;
-  line-height: 32px;
-  vertical-align: top;
-  white-space: nowrap; }
-  .chimp-button:hover {
-    color: white; }
-  .chimp-button a {
-    color: white; }
-    .chimp-button a:hover {
-      color: white; }
-  .chimp-button:hover {
-    text-decoration: none; }
-  .chimp-button a {
-    text-decoration: none; }
-    .chimp-button a:hover {
-      text-decoration: none; }
-  .chimp-button:hover {
-    background-color: #777777; }

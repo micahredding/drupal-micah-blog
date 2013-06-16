@@ -14,6 +14,29 @@ header {
       top: 0;
       left: 0; } }
 
+#header-image {
+  overflow: hidden;
+  display: none;
+  max-height: 0; }
+  @media (min-height: 300px) {
+    #header-image {
+      max-height: 200px; } }
+  @media (min-height: 450px) {
+    #header-image {
+      max-height: 300px; } }
+  @media (min-height: 600px) {
+    #header-image {
+      max-height: 400px; } }
+  @media (min-height: 750px) {
+    #header-image {
+      max-height: 500px; } }
+  @media (min-height: 900px) {
+    #header-image {
+      max-height: 600px; } }
+  @media (min-height: 1050px) {
+    #header-image {
+      max-height: 700px; } }
+
 nav.site-nav {
   display: inline-block;
   margin: 0.5em 1em; }
@@ -36,6 +59,10 @@ nav.site-nav {
       position: fixed;
       top: 0;
       right: 0; } }
+
+#header-image img {
+  width: 100%;
+  height: auto; }
 
 #page {
   max-width: 600px;
