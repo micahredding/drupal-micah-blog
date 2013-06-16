@@ -54,7 +54,8 @@ a {
       background-color: #000000; } }
   @media (min-width: 1100px) {
     #header {
-      background: none; }
+      background: none;
+      min-width: 15em; }
       #header #site-name a {
         background: none; } }
   #header a {
