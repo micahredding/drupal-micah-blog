@@ -11,6 +11,8 @@ function micah_preprocess_page(&$vars,$hook) {
       $var = str_replace('-','_',$key);
       $vars[$var] = menu_tree($key);
   } 
+
+  // $vars['header_image'] = file_create_url($vars['node']->field_image['und'][0]['uri']);
 }
 
 

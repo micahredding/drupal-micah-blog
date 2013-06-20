@@ -66,6 +66,12 @@
  * @see template_process()
  */
 ?>
+  <?php if(isset($header_image)): ?>
+  <div id="header-image">
+    <img src="<?php print $header_image; ?>" width="100%" />
+  </div>
+  <?php endif; ?>
+  
   <header id="header">
     <div id="site-name">
       <a href="<?php print $base_path; ?>">
