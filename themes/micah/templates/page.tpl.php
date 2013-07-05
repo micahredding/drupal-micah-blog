@@ -79,11 +79,11 @@
       </a>
     </div>
     <ul>
-      <li><a href="http://micahredding.com/">About Micah Redding</a></li>
       <li><a href="<?php print $base_path; ?>">Blog home page</a></li>
       <li><a href="http://micahredding.com/blog/life">Life on the Curve</a></li>      
       <li><a href="http://micahredding.com/blog/theology">Christianity Against Religion</a></li>      
       <li><a href="http://micahredding.com/blog/transhumanism">The Singularity &amp; Transhumanism</a></li>      
+      <li><a href="http://micahredding.com/">About Micah Redding</a></li>
       <li><a href="http://twitter.com/micahtredding">Twitter</a></li>
     </ul>
   </header>
