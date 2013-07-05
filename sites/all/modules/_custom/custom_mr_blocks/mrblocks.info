@@ -1,0 +1,4 @@
+name = Custom MR Blocks
+description = Site name as a block
+core = 7.x
+package = Custom Micah Redding

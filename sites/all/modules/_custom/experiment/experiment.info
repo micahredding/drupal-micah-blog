@@ -1,0 +1,10 @@
+name = experiment
+core = 7.x
+package = Features
+php = 5.2.4
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = experiment
+features[ctools][] = context:context:3
+features[features_api][] = api:1

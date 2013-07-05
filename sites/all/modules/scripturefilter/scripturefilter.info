@@ -1,0 +1,11 @@
+name = Scripturefilter
+description = Turns any Scripture reference into a link to one of several online Bibles.
+core = 7.x
+package = "Text Formats"
+
+; Information added by drupal.org packaging script on 2012-08-23
+version = "7.x-1.3"
+core = "7.x"
+project = "scripturefilter"
+datestamp = "1345713364"
+

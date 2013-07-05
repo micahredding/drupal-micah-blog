@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the theology feature.
+ */
+
+include_once 'theology.features.inc';
