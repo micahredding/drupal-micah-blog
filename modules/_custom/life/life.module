@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the life feature.
- */
-
-include_once 'life.features.inc';

@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Stream feature.
- */
-
-include_once 'stream.features.inc';
