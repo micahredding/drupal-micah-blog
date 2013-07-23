@@ -66,12 +66,7 @@
  * @see template_process()
  */
 ?>
-  <?php if(isset($header_image)): ?>
-  <div id="header-image">
-    <img src="<?php print $header_image; ?>" width="100%" />
-  </div>
-  <?php endif; ?>
-  
+
   <header id="header">
     <div id="site-name">
       <a href="<?php print $base_path; ?>">
@@ -96,13 +91,19 @@
 
   <div id="page">
 
-    <?php print $messages; ?>
+    <?php if(isset($header_image)): ?>
+    <div id="header-image">
+      <img src="<?php print $header_image; ?>" width="100%" />
+    </div>
+    <?php endif; ?>
 
     <?php if ($page['highlighted']): ?>
       <div id="highlighted">
         <?php print render($page['highlighted']); ?>
       </div>
-    <?php endif; ?>
+    <?php endif; ?>  
+
+    <?php print $messages; ?>
         
     <div id="main-wrapper"><div id="main" class="clearfix">
 
