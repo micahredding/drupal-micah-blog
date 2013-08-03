@@ -88,6 +88,7 @@ function mrblocks_block_view($id) {
         'content' => theme('item_list', array('items' => array(
           'Twitter' => _prepare_tweet(),
           'Email' => _prepare_subscribe(),
+          'Facebook' => _prepare_fb(),
         ))),
       );
     break;
@@ -118,6 +119,15 @@ function _prepare_tweet() {
 
   $tweet = l($array['title'], $tweet_path, array('attributes' => $array['attributes'], 'absolute' => TRUE, 'html' => TRUE));
   return $tweet;
+}
+
+function _prepare_fb() {
+  $url = current_path();
+  if($url == 'node') {
+    $url = drupal_lookup_path('alias',current_path());
+  }
+  $url = 'http://' . $_SERVER['HTTP_HOST'] . base_path() . $url;
+  return '<div class="fb-like" data-href="' . $url . '" data-width="450" data-layout="button_count" data-show-faces="true" data-send="true" style="padding:0.5em 2em; max-width:200px;"></div>';
 }
 
 function _prepare_tweet_path($page_title, $path) {
