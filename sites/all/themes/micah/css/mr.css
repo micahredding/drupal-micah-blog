@@ -177,4 +177,5 @@ hr {
   .one-sidebar .comment-form .form-text,
   .one-sidebar .comment-form .form-select {
     display: inline-block;
-    width: auto; } }
+    width: auto;
+    max-width: 100%; } }

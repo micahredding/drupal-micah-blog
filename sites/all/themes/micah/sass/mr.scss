@@ -194,6 +194,7 @@ hr {
     input, .form-text, .form-select {
       display:inline-block;
       width:auto;
+      max-width: 100%;
     }
   }
 }
