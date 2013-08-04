@@ -124,9 +124,9 @@ function _prepare_tweet() {
 function _prepare_fb() {
   $url = current_path();
   if($url == 'node') {
-    $url = drupal_lookup_path('alias',current_path());
+    $url = '<front>';
   }
-  $url = 'http://' . $_SERVER['HTTP_HOST'] . base_path() . $url;
+  $url = url($url, array('absolute' => TRUE));
   return '<div class="fb-like" data-href="' . $url . '" data-width="450" data-layout="button_count" data-show-faces="true" data-send="true" style="padding:0.5em 2em; max-width:200px;"></div>';
 }
 
