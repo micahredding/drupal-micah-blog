@@ -228,10 +228,6 @@
 
     <?php if ($page['footer']): ?>
       <div id="footer" class="clearfix">
-        <?php if ($breadcrumb): ?>
-          <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-        <?php endif; ?>
-
         <?php print render($page['footer']); ?>
       </div> <!-- /#footer -->
     <?php endif; ?>
