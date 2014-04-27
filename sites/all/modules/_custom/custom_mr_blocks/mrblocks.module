@@ -101,7 +101,7 @@ function _prepare_rss() {
   $attributes['class'] = 'rss';
   $attributes['target'] = '_blank';
   $title = '<i class="fa fa-rss"></i> RSS Feed';
-  $rss = l($title, 'http://micahredding.com/blog/rss.xml', array('attributes' => $attributes, 'absolute' => TRUE));
+  $rss = l($title, 'http://micahredding.com/blog/rss.xml', array('attributes' => $attributes, 'absolute' => TRUE, 'html' => TRUE));
   return $rss;
 }
 
@@ -117,7 +117,7 @@ function _prepare_tweet() {
   $img = base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/twitter.png';
 
   $array = array();
-  $array['title'] = '<img src="'. $img .'" alt="Post to Twitter" title="Post to Twitter"> Post to Twitter';
+  $array['title'] = '<i class="fa fa-twitter"></i> Post to Twitter';
   $array['href'] = 'http://twitter.com/';
   $array['attributes'] = array(
     'class' => 'tweet',
