@@ -46,7 +46,7 @@ function mrblocks_block_view($id) {
                   <span>Micah Redding</span>
                 </a>
               </strong>
-            </div>            
+            </div>
        ',);
     break;
     case 'section-title-life':
@@ -86,13 +86,22 @@ function mrblocks_block_view($id) {
       return array(
         'subject' => NULL,
         'content' => theme('item_list', array('items' => array(
-          'Twitter' => _prepare_tweet(),
           'Email' => _prepare_subscribe(),
+          'RSS Feed' => _prepare_rss(),
+          'Twitter' => _prepare_tweet(),
           'Facebook' => _prepare_fb(),
         ))),
       );
     break;
   }
+}
+
+function _prepare_rss() {
+  $attributes = array();
+  $attributes['class'] = 'rss';
+  $attributes['target'] = '_blank';
+  $rss = l('RSS Feed', 'http://micahredding.com/blog/rss.xml', array('attributes' => $attributes, 'absolute' => TRUE));
+  return $rss;
 }
 
 function _prepare_tweet() {

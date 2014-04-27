@@ -1,0 +1,16 @@
+name = Forward 
+description = Forward this page module
+core = 7.x
+configure = admin/config/user-interface/forward
+dependencies[] = system (>7.14)
+dependencies[] = entity
+dependencies[] = entity_token
+files[] = forward.mail.inc
+files[] = views/forward_handler_field_forward_link.inc
+
+; Information added by drupal.org packaging script on 2013-07-02
+version = "7.x-3.x-dev"
+core = "7.x"
+project = "forward"
+datestamp = "1372779206"
+
