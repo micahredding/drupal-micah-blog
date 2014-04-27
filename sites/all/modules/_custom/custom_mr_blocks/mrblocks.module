@@ -89,7 +89,7 @@ function mrblocks_block_view($id) {
           '<p>' . _prepare_subscribe() . '</p>' .
           '<p>' . _prepare_rss() . '</p>' .
           '<p>' . _prepare_tweet() . '</p>' .
-          '<p>' . _prepare_fb() . '</p>';
+          '<p>' . _prepare_fb() . '</p>',
       );
     break;
   }
