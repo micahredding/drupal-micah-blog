@@ -100,7 +100,8 @@ function _prepare_rss() {
   $attributes = array();
   $attributes['class'] = 'rss';
   $attributes['target'] = '_blank';
-  $rss = l('RSS Feed', 'http://micahredding.com/blog/rss.xml', array('attributes' => $attributes, 'absolute' => TRUE));
+  $title = '<i class="fa fa-rss"></i> RSS Feed';
+  $rss = l($title, 'http://micahredding.com/blog/rss.xml', array('attributes' => $attributes, 'absolute' => TRUE));
   return $rss;
 }
 

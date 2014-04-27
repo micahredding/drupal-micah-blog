@@ -24,6 +24,7 @@ function bartik_preprocess_html(&$variables) {
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
+  drupal_add_css("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", array('type' => 'external'));
 }
 
 /**
