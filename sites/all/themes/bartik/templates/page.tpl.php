@@ -207,10 +207,6 @@
 
   </div></div> <!-- /#main, /#main-wrapper -->
 
-    <?php if ($breadcrumb): ?>
-      <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-    <?php endif; ?>
-
   <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
     <div id="triptych-wrapper"><div id="triptych" class="clearfix">
       <?php print render($page['triptych_first']); ?>
@@ -232,6 +228,10 @@
 
     <?php if ($page['footer']): ?>
       <div id="footer" class="clearfix">
+        <?php if ($breadcrumb): ?>
+          <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+        <?php endif; ?>
+
         <?php print render($page['footer']); ?>
       </div> <!-- /#footer -->
     <?php endif; ?>
