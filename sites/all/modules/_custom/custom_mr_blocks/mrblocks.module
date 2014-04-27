@@ -85,12 +85,11 @@ function mrblocks_block_view($id) {
     case 'mr-nav':
       return array(
         'subject' => NULL,
-        'content' => theme('item_list', array('items' => array(
-          'Email' => _prepare_subscribe(),
-          'RSS Feed' => _prepare_rss(),
-          'Twitter' => _prepare_tweet(),
-          'Facebook' => _prepare_fb(),
-        ))),
+        'content' =>
+          '<p>' . _prepare_subscribe() . '</p>' .
+          '<p>' . _prepare_rss() . '</p>' .
+          '<p>' . _prepare_tweet() . '</p>' .
+          '<p>' . _prepare_fb() . '</p>';
       );
     break;
   }
