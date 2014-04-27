@@ -162,7 +162,5 @@ function _prepare_subscribe() {
     $href = 'http://micahredding.com/curve';
   }
 
-  $img = base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/mail.png';
-
-  return '<a href="' . $href . '"><img src="' . $img . '" /> Get essays by email</a>';
+  return '<a href="' . $href . '"><i class="fa fa-envelope-o"></i> Get essays by email</a>';
 }
