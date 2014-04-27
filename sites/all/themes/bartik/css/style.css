@@ -865,7 +865,7 @@ ul.links {
 }
 #footer-wrapper .block {
   margin: 20px 0;
-  border: 1px solid #444;
+/*  border: 1px solid #444;*/
   border-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
 }
@@ -911,7 +911,7 @@ ul.links {
 }
 #footer-columns .content li a {
   display: block;
-  border-bottom: 1px solid #555;
+/*  border-bottom: 1px solid #555;*/
   border-color: rgba(255, 255, 255, 0.15);
   line-height: 1.2;
   padding: 0.8em 2px 0.8em 20px; /* LTR */
