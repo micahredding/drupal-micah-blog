@@ -307,6 +307,7 @@ ul.tips {
   line-height: 1;
 }
 h1#site-name {
+  float:left;
   margin: 0;
 }
 #site-name a {
@@ -590,6 +591,9 @@ h1#page-title {
 }
 .node-teaser h2 a {
   color: #181818;
+}
+.node-teaser .field-type-image img {
+  float: left;
 }
 .node-teaser {
   border-bottom: 1px solid #d3d7d9;
