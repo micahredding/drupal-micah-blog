@@ -86,6 +86,7 @@ function mrblocks_block_view($id) {
       return array(
         'subject' => NULL,
         'content' =>
+          '<p><a href="http://micahredding.com/blog"><img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" /></a></p>' .
           '<p>' . _prepare_subscribe() . '</p>' .
           '<p>' . _prepare_rss() . '</p>' .
           '<p>' . _prepare_tweet() . '</p>' .
