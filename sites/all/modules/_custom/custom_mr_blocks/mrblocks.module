@@ -89,7 +89,7 @@ function mrblocks_block_view($id) {
           '<p><a href="http://micahredding.com/blog"><img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" /></a></p>' .
           '<p>' . _prepare_subscribe() . '</p>' .
           '<p>' . _prepare_rss() . '</p>' .
-          '<p>' . _prepare_tweet() . '</p>' .
+          '<p>' . _prepare_contextual_tweet() . '</p>' .
           '<p>' . _prepare_fb() . '</p>',
       );
     break;
@@ -163,4 +163,10 @@ function _prepare_subscribe() {
   }
 
   return '<a href="' . $href . '"><i class="fa fa-envelope-o"></i> Get essays by email</a>';
+}
+
+function _prepare_contextual_tweet() {
+  $link = '<a href="https://twitter.com/share" class="twitter-share-button" data-via="micahtredding">Tweet</a>';
+  $script = "<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>";
+  return $link . $script;
 }
