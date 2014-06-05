@@ -310,8 +310,9 @@ ul.tips {
   color: #686868;
 }*/
 #site-name a {
-  font-weight: normal;
   color: #eee;
+  font-weight: normal;
+  padding: 10px;
 }
 #site-name a:hover {
   color: #fff;
