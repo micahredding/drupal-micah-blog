@@ -121,7 +121,7 @@ div.meta,
 p.comment-time,
 table,
 .breadcrumb {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 input,
 textarea,
@@ -296,28 +296,31 @@ ul.tips {
   float: left; /* LTR */
   padding: 15px 15px 15px 10px; /* LTR */
 }
-#name-and-slogan {
-  float: left; /* LTR */
-  padding-top: 34px;
-  margin: 0 0 30px 15px; /* LTR */
+/*#name-and-slogan {
+  float: left;
+  padding: 5px 0;
+}*/
+#site-name, #site-slogan {
+  color: #eeeeee;
+  display: inline-block;
+  padding: 10px;
 }
-#site-name {
+/*#site-name {
   font-size: 1.821em;
   color: #686868;
-  line-height: 1;
-}
-h1#site-name {
-  margin: 0;
-}
+}*/
 #site-name a {
   font-weight: normal;
+  color: #eee;
 }
-#site-slogan {
-  font-size: 0.929em;
-  margin-top: 7px;
+#site-name a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/*#site-slogan {
   word-spacing: 0.1em;
   font-style: italic;
-}
+}*/
 /* Region header blocks. */
 .region-header .block {
   font-size: 0.857em;
@@ -457,37 +460,51 @@ h1#site-name {
 /* --------------- Main Menu ------------ */
 
 #main-menu {
-  clear: both;
+/*  clear: both;*/
+/*  margin-top: 10px;*/
 }
 #main-menu-links {
   font-size: 0.929em;
   margin: 0;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 #main-menu-links li {
-  float: left; /* LTR */
+  display: block;
   list-style: none;
   padding: 0 1px;
   margin: 0 1px;
 }
+@media (min-width: 800px) {
+  #main-menu {
+    display: inline-block;
+    float: right;
+  }
+  #main-menu-links li {
+    display: inline-block;
+  }
+  #main-menu-links a {
+    display: inline-block;
+  }
+}
 #main-menu-links a {
   color: #FFF;
+  display: block;
 /*  background: #ccc;
   background: rgba(255, 255, 255, 0.7);*/
-  float: left; /* LTR */
-  height: 2.4em;
-  line-height: 2.4em;
-  padding: 0 0.8em;
+/*  height: 2.4em;
+  line-height: 2.4em;*/
+/*  display: block;*/
+  padding: 11px 0.8em;
   text-decoration: none;
 /*  text-shadow: 0 1px #eee;*/
-  -khtml-border-radius-topleft: 8px;
+/*  -khtml-border-radius-topleft: 8px;
   -khtml-border-radius-topright: 8px;
   -moz-border-radius-topleft: 8px;
   -moz-border-radius-topright: 8px;
   -webkit-border-top-left-radius: 8px;
   -webkit-border-top-right-radius: 8px;
   border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-right-radius: 8px;*/
 }
 #main-menu-links a:hover,
 #main-menu-links a:focus {

@@ -1,8 +1,8 @@
 production:
-  domain: 
-  - name: "bricksco@bricksites.com"
+  domain:
+  - name: "bricks@bricksites.com"
     ssh_options:
     - "-p 2222"
-  deploy_to: "~/public_html/micahredding_blog/"
+  deploy_to: "~/public_html/micah/micahredding_blog/"
   repository: "git@github.com:micahredding/drupal-micah-blog.git"
   branch: "master"
