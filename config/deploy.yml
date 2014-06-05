@@ -1,6 +1,6 @@
 production:
   domain:
-  - name: "bricks@bricksites.com"
+  - name: "bricks@bricksites.info"
     ssh_options:
     - "-p 2222"
   deploy_to: "~/public_html/micah/micahredding_blog/"
