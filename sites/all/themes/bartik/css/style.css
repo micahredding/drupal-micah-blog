@@ -561,11 +561,11 @@ ul.tips {
   font-size: 1.643em;
   font-weight: normal;
   line-height: 1.4;
-  padding: 20px 0 45px;
+/*  padding: 20px 0 45px;*/
   margin: 0;
-  background: #f0f0f0;
-  background: rgba(30, 50, 10, 0.08);
-  border-bottom: 1px solid #e7e7e7;
+/*  background: #f0f0f0;
+  background: rgba(30, 50, 10, 0.08);*/
+/*  border-bottom: 1px solid #e7e7e7;*/
   text-shadow: 1px 1px #fff;
 }
 #featured h2 {
@@ -575,6 +575,20 @@ ul.tips {
 #featured p {
   margin: 0;
   padding: 0;
+}
+#featured .content {
+  margin-top: 0;
+}
+#featured div.section {
+  width: 100%;
+}
+#featured img {
+  width: 100%;
+  height: auto;
+}
+#featured {
+  max-height: 400px;
+  overflow: hidden;
 }
 
 /* --------------- Highlighted ---------------- */
