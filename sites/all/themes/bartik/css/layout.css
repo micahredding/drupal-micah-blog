@@ -9,6 +9,18 @@ body,
 #header div.section {
   position: relative;
 }
+@media(min-width: 960px) {
+  #page {
+    padding-top: 3em;
+  }
+  #header {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
 #intro div.section {
   box-sizing: border-box;
   margin: 0 auto;
