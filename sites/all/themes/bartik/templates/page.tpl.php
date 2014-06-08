@@ -127,6 +127,12 @@
     </div></div> <!-- /.section, /#messages -->
   <?php endif; ?>
 
+  <?php if ($page['intro']): ?>
+    <div id="intro"><div class="section clearfix">
+      <?php print render($page['intro']); ?>
+    </div></div> <!-- /.section, /#intro -->
+  <?php endif; ?>
+
   <?php if ($page['featured']): ?>
     <div id="featured"><div class="section clearfix">
       <?php print render($page['featured']); ?>
