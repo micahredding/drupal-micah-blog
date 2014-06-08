@@ -167,6 +167,6 @@ function _prepare_subscribe() {
 
 function _prepare_contextual_tweet() {
   $link = '<a href="https://twitter.com/share" class="twitter-share-button" data-via="micahtredding">Tweet</a>';
-  $script = "<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>";
+  $script = ""; # Moved social scripts to bottom of html.tpl.php
   return $link . $script;
 }
