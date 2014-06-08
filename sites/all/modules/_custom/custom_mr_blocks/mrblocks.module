@@ -22,12 +22,14 @@ function mrblocks_block_info() {
       'info' => t('Section Photo Theology'),
       'cache' => DRUPAL_NO_CACHE,
     ),
-
     'site-message' => array(
       'info' => t('Site Message'),
       'cache' => DRUPAL_NO_CACHE,
     ),
-
+    'site-intro' => array(
+      'info' => t('Site Intro'),
+      'cache' => DRUPAL_NO_CACHE,
+    ),
     'mr-nav' => array(
       'info' => t('MR Custom Nav'),
       'cache' => DRUPAL_NO_CACHE,
@@ -75,11 +77,18 @@ function mrblocks_block_view($id) {
         'content' => '<a href="' . base_path() . 'theology" title="Home" rel="home">
             <img src="' . base_path() . drupal_get_path('module', 'mrblocks') . '/assets/images/xn.jpg" /></a>',);
     break;
-
     case 'site-message':
       return array(
         'subject' => 'Site Message',
         'content' => 'Random musings, unconventional theological reflections,   and memos from the edge of my human experience.',
+      );
+    break;
+    case 'site-intro':
+      return array(
+        'subject' => '',
+        'content' => '<p><a href="http://micahredding.com/blog"><img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" /></a> I’m Micah Redding. I grew up as a preacher’s kid, and toured the world as a rock musician. Now I develop software — and write about the intersection of human values and technology.</p>
+
+          <p>' . _prepare_subscribe() . '</p>',
       );
     break;
     case 'mr-nav':
