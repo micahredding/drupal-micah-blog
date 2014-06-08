@@ -480,6 +480,10 @@ ul.tips {
     display: inline-block;
     float: right;
   }
+  #main-menu-links {
+    display: inline-block;
+    float: left;
+  }
   #main-menu-links li {
     display: inline-block;
   }
@@ -491,7 +495,7 @@ ul.tips {
 #main-menu-social {
   font-size: 0.929em;
   margin: 0;
-  padding: 10px;
+  padding: 10px 20px 6px;
 }
 #main-menu-social li {
   display: block;
