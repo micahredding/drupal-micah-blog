@@ -9,6 +9,13 @@ body,
 #header div.section {
   position: relative;
 }
+#intro div.section {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 1em 15px;
+}
+
 #content .field-content img {
   width: 100%;
   height: auto;

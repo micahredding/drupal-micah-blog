@@ -487,6 +487,29 @@ ul.tips {
     display: inline-block;
   }
 }
+
+#main-menu-social {
+  font-size: 0.929em;
+  margin: 0;
+  padding: 10px;
+}
+#main-menu-social li {
+  display: block;
+  list-style: none;
+  padding: 0 1px;
+  margin: 0 1px;
+}
+@media (min-width: 800px) {
+  #main-menu-social {
+    display: inline-block;
+    float: right;
+  }
+  #main-menu-social li {
+    display: inline-block;
+    float: left;
+  }
+}
+
 #main-menu-links a {
   color: #FFF;
   display: block;
@@ -583,12 +606,24 @@ ul.tips {
   width: 100%;
 }
 #featured img {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 #featured {
   max-height: 400px;
   overflow: hidden;
+}
+
+/* --------------- Intro ---------------------- */
+#intro {
+  font-size: 1.4em;
+}
+#intro img {
+  float: left;
+  margin: 0 1em 0 0;
+}
+#intro p:last-child {
+  margin-bottom: 0;
 }
 
 /* --------------- Highlighted ---------------- */
@@ -598,7 +633,10 @@ ul.tips {
   font-size: 120%;
   text-align: center;
 }
-
+#highlighted img {
+  width: 100%;
+  height: auto;
+}
 /* ------------------- Help ------------------- */
 
 .region-help {
