@@ -665,6 +665,7 @@ h1#page-title {
 }
 .node .content {
   font-size: 1.071em;
+  font-size: 1.5em;
 }
 .node-teaser .content {
   font-size: 1em;
