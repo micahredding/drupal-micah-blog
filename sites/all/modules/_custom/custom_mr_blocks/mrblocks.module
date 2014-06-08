@@ -154,15 +154,17 @@ function _prepare_tweet_path($page_title, $path) {
   return $tweet;
 }
 
-function _prepare_subscribe() {
-  $href = '';
+function _contextual_subscribe_url() {
   if(context_isset('context','theology')) {
     $href = 'http://micahredding.com/xn';
   } else {
     $href = 'http://micahredding.com/curve';
   }
+  return $href;
+}
 
-  return '<a href="' . $href . '"><i class="fa fa-envelope-o"></i> Get essays by email</a>';
+function _prepare_subscribe() {
+  return '<a href="' . _contextual_subscribe_url() . '"><i class="fa fa-envelope-o"></i> Get essays by email</a>';
 }
 
 function _prepare_contextual_tweet() {
