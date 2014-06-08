@@ -663,9 +663,11 @@ h1#page-title {
   font-size: 1.429em;
   line-height: 1.4;
 }
+body.no-sidebars.page-node.node-type-article .node .content {
+  font-size: 1.5em;
+}
 .node .content {
   font-size: 1.071em;
-  font-size: 1.5em;
 }
 .node-teaser .content {
   font-size: 1em;
