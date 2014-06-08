@@ -48,7 +48,6 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
-  <?php print $scripts; ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta property="fb:admins" content="510967360" />
   <link rel="alternate" type="application/rss+xml" title="Micah Redding: life on the curve" href="http://micahredding.com/blog/rss.xml" />
@@ -64,6 +63,7 @@
   <?php print $page_bottom; ?>
 
   <div id="fb-root"></div>
+  <?php print $scripts; ?>
   <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
