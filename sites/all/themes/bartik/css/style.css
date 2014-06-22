@@ -1741,3 +1741,21 @@ div.admin-panel .description {
 #footer-wrapper .poll .bar .foreground {
   background-color: #ddd;
 }
+
+
+#block-mrblocks-mr-email-signup {
+  font-size: 1.5em;
+}
+#block-mrblocks-mr-email-signup .text {
+  text-align: left;
+}
+#block-mrblocks-mr-email-signup img {
+  float: left;
+  margin-right: 1em;
+}
+#block-mrblocks-mr-email-signup form {
+  text-align: left;
+}
+#block-mrblocks-mr-email-signup form input[type="submit"] {
+  appearance: none;
+}
