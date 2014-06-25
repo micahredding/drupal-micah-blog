@@ -66,30 +66,33 @@
  * @see template_process()
  */
 ?>
-
   <header id="header">
     <div id="site-name">
       <a href="<?php print $base_path; ?>">
         <span class="text-logo">m</span><span class="text-text">micah/redding</span>
       </a>
     </div>
-    <ul>
-      <li><a href="<?php print $base_path; ?>">Blog home page</a></li>
-      <li><a href="http://micahredding.com/blog/life">Life on the Curve</a></li>      
-      <li><a href="http://micahredding.com/blog/theology">Christianity Against Religion</a></li>      
-      <li><a href="http://micahredding.com/blog/transhumanism">The Singularity &amp; Transhumanism</a></li>      
-      <li><a href="http://micahredding.com/">About Micah Redding</a></li>
-      <li><a href="http://twitter.com/micahtredding">Twitter</a></li>
-    </ul>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="<?php print $base_path; ?>">Blog home page</a></li>
+        <li><a href="<?php print $base_path; ?>life">Life on the Curve</a></li>
+        <li><a href="<?php print $base_path; ?>theology">Christianity Against Religion</a></li>
+        <li><a href="<?php print $base_path; ?>transhumanism">The Singularity &amp; Transhumanism</a></li>
+        <li><a href="<?php print $base_path; ?>experiment">Notebook</a></li>
+        <li><a href="http://twitter.com/micahtredding">Twitter</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav class="site-nav">
-  <?php if($page['header']): ?>
-      <?php print render($page['header']); ?>
-  <?php endif; ?>
-  </nav>
+    <?php if ($page['featured']): ?>
+      <div id="featured">
+        <?php print render($page['featured']); ?>
+      </div>
+    <?php endif; ?>
+
 
   <div id="page">
+
 
     <?php if(isset($header_image)): ?>
     <div id="header-image">
@@ -101,15 +104,15 @@
       <div id="highlighted">
         <?php print render($page['highlighted']); ?>
       </div>
-    <?php endif; ?>  
+    <?php endif; ?>
 
     <?php print $messages; ?>
-        
+
     <div id="main-wrapper"><div id="main" class="clearfix">
 
       <div id="content" class="column">
         <a id="main-content"></a>
-        <div class="contextual-links-region">        
+        <div class="contextual-links-region">
           <?php print render($title_prefix); ?>
           <?php if ($title): ?><h1 class="page title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
           <?php print render($title_suffix); ?>
@@ -142,8 +145,8 @@
     <div class="internal">
       <?php print render($page['footer']); ?>
       <div class="google-plus">
-        <a href="http://micahredding.com/blog/rss.xml">RSS</a>, 
-        <a href="https://plus.google.com/110800681150805455169?rel=author">Google +</a> 
+        <a href="http://micahredding.com/blog/rss.xml">RSS</a>,
+        <a href="https://plus.google.com/110800681150805455169?rel=author">Google +</a>
       </div>
     </div>
   </footer>

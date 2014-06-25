@@ -12,11 +12,12 @@ header {
     header {
       position: fixed;
       top: 0;
-      left: 0; } }
+      left: 0;
+      z-index: 1000; } }
 
 #header-image {
-  overflow: hidden;
-  max-height: 0; }
+  max-height: 0;
+  overflow: hidden; }
   @media (min-height: 300px) {
     #header-image {
       max-height: 200px; } }
@@ -36,36 +37,13 @@ header {
     #header-image {
       max-height: 700px; } }
 
-nav.site-nav {
-  display: inline-block;
-  margin: 0.5em 1em; }
-  nav.site-nav .block {
-    float: none;
-    margin: 0 0; }
-    nav.site-nav .block li {
-      display: inline-block; }
-      nav.site-nav .block li a {
-        display: block;
-        padding: 0.5em 2em; }
-      @media (min-width: 1100px) {
-        nav.site-nav .block li {
-          display: block; } }
-  @media (min-width: 600px) {
-    nav.site-nav {
-      margin: 0.5em 1em; } }
-  @media (min-width: 1100px) {
-    nav.site-nav {
-      position: fixed;
-      top: 0;
-      right: 0; } }
-
 #header-image img {
   width: 100%;
   height: auto; }
 
 #page {
   max-width: 600px;
-  margin: 2em;
+  margin: 1em;
   background: none; }
   @media (min-width: 600px) {
     #page {
