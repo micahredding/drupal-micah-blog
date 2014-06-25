@@ -99,37 +99,23 @@ function mrblocks_block_view($id) {
       return array(
         'subject' => NULL,
         'content' =>
-          '<p><a href="http://micahredding.com/blog"><img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" /></a></p>' .
-          '<p>' . _prepare_subscribe() . '</p>' .
-          '<p>' . _prepare_rss() . '</p>',
+          '<p><a href="http://micahredding.com/blog"><img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" /></a></p>',
       );
     break;
     case 'mr-email-signup':
       return array(
         'subject' => NULL,
-        'content' => '
-          <div class="image">
-            <a href="http://micahredding.com/blog"><img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" /></a>
-          </div>
-          <div class="text">Subscribe for more essays like this</div>
-          <!-- Begin MailChimp Signup Form -->
-          <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-               We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          <div id="mc_embed_signup">
+        'content' => '<img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" />
           <form action="http://micahredding.us4.list-manage.com/subscribe/post?u=c9e24ff2e309d9d4edb919a40&amp;id=f2212245c8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <label for="mce-EMAIL">Subscribe to our mailing list</label>
+            <label for="mce-EMAIL">I grew up as a preacher’s kid, and toured the world as a rock musician.<br />
+            Now I develop software — and write about the intersection of human values and technology.<br /><br />
+
+Subscribe to receive essays like this via email.</label>
             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;"><input type="text" name="b_c9e24ff2e309d9d4edb919a40_f2212245c8" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </form>
-          </div>
-
-          <!--End mc_embed_signup-->          ',
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </form>',
       );
   }
 }
