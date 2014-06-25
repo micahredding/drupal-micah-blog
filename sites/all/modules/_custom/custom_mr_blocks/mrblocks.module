@@ -107,8 +107,8 @@ function mrblocks_block_view($id) {
         'subject' => NULL,
         'content' => '<img src="http://eminenthuman.com/sites/default/files/styles/square_thumbnail/public/field/image/ca81300407464668a663741629264f92_7.jpg" />
           <form action="http://micahredding.us4.list-manage.com/subscribe/post?u=c9e24ff2e309d9d4edb919a40&amp;id=f2212245c8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <label for="mce-EMAIL">I grew up as a preacher’s kid, and toured the world as a rock musician.<br />
-            Now I develop software — and write about the intersection of human values and technology.<br /><br />
+            <label for="mce-EMAIL">I grew up as a preacher’s kid, and toured the world as a rock musician. Now I develop software
+            — and write about the intersection of human values and technology.<br /><br />
 
 Subscribe to receive essays like this via email.</label>
             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>

@@ -11,7 +11,7 @@
 body {
   background: #ffffff;
   color: #3b3b3b;
-  font-family: Georgia, "Times New Roman", sans-serif; }
+  font-family: "Georgia", "Times New Roman", sans-serif; }
 
 a {
   color: #0071B3; }
@@ -149,12 +149,8 @@ hr {
   margin: 0em;
   padding: 2em 1em 2em 1em; }
 
-.sidebar {
-  background: #fcfcfc; }
-  .sidebar .block {
-    border: none; }
-  .sidebar#sidebar-second {
-    background: #eeeeee; }
+.sidebar .block {
+  border: none; }
 
 .sidebar #block-views-slideshow-block {
   margin: 0 0 10px;
@@ -186,27 +182,18 @@ hr {
     width: auto;
     max-width: 100%; } }
 #block-mrblocks-mr-email-signup {
-  font-size: 1.5em; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2em; }
   #block-mrblocks-mr-email-signup label {
     font-weight: normal;
-    margin-bottom: 0.5em; }
+    margin-bottom: 1em; }
 
 #block-mrblocks-mr-email-signup img {
-  display: inline-block;
+  float: left;
   margin: 0 1em 1em 0;
   max-width: 180px;
   padding: 0;
   vertical-align: top; }
-  @media (min-width: 700px) {
-    #block-mrblocks-mr-email-signup img {
-      width: 30%; } }
-
-#block-mrblocks-mr-email-signup form {
-  display: inline-block;
-  text-align: left; }
-  @media (min-width: 700px) {
-    #block-mrblocks-mr-email-signup form {
-      width: 64%; } }
 
 #block-mrblocks-mr-email-signup form input[type="submit"] {
   appearance: none; }
@@ -256,7 +243,7 @@ hr {
 
 #block-mrblocks-mr-email-signup input.email {
   display: block;
-  padding: 8px 0;
+  padding: 8px;
   margin: 0 4% 0.5em 0;
   text-indent: 5px;
   width: 100%; }

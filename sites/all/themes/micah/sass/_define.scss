@@ -9,7 +9,10 @@ $black:#000000;
 $grey:$midGrey;
 $white:#FFFFFF;
 
-@mixin Serif {font-family: Georgia, "Times New Roman", sans-serif;}
+$serif: "Georgia", "Times New Roman", sans-serif;
+$sans-serif: "Open Sans", Helvetica, Arial, sans-serif;
+
+@mixin Serif {font-family: $serif;}
 @mixin SanSerif {font-family: Helvetica, Arial, sans-serif;}
 @mixin Center {margin:0 auto;}
 @mixin FullWidth {max-width:60px;}

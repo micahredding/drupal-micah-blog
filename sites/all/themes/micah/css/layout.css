@@ -60,13 +60,18 @@ header {
       margin-bottom: 20px; }
 
 .sidebar .block {
+  margin: 0 auto;
   max-width: 600px;
-  padding: 2em;
-  margin-bottom: 0; }
+  padding: 2em; }
   @media (min-width: 600px) {
     .sidebar .block {
-      margin: 0em auto;
       padding: 2em 0; } }
+
+#sidebar-first {
+  background: #eee; }
+
+#sidebar-second {
+  background: #fff; }
 
 /* Footer Blocks */
 footer .block, footer .google-plus {
