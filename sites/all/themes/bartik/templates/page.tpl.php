@@ -115,13 +115,13 @@
             'class' => array('element-invisible'),
           ),
         )); ?>
-        <ul id="main-menu-social">
-          <li><?php print _prepare_contextual_tweet(); ?></li>
-          <li><?php print _prepare_fb(); ?></li>
-        </ul>
       </div> <!-- /#main-menu -->
     <?php endif; ?>
 
+    <ul id="main-menu-social">
+      <li><?php print _prepare_contextual_tweet(); ?></li>
+      <li><?php print _prepare_fb(); ?></li>
+    </ul>
 
   </div></div> <!-- /.section, /#header -->
 

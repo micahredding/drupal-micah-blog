@@ -305,6 +305,11 @@ ul.tips {
   display: inline-block;
   padding: 10px;
 }
+@media(min-width: 800px) {
+  #site-name, #site-slogan {
+    float: left;
+  }
+}
 /*#site-name {
   font-size: 1.821em;
   color: #686868;
@@ -478,7 +483,7 @@ ul.tips {
 @media (min-width: 800px) {
   #main-menu {
     display: inline-block;
-    float: right;
+    float: left;
   }
   #main-menu-links {
     display: inline-block;
