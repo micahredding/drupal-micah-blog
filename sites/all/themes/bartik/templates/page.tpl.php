@@ -185,6 +185,14 @@
 
   </div></div> <!-- /#main, /#main-wrapper -->
 
+
+  <?php if ($page['comment_area']): ?>
+    <div id="comment_area" class="clearfix">
+      <?php print render($page['comment_area']); ?>
+    </div> <!-- /#comment_area -->
+  <?php endif; ?>
+
+
   <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
     <div id="triptych-wrapper"><div id="triptych" class="clearfix">
       <?php print render($page['triptych_first']); ?>

@@ -22,6 +22,8 @@ regions[content] = Content
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 
+regions[comment_area] = Comment Area
+
 regions[triptych_first] = Triptych first
 regions[triptych_middle] = Triptych middle
 regions[triptych_last] = Triptych last

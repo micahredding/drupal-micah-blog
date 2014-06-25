@@ -869,6 +869,21 @@ ul.links {
   border-bottom: 1px solid #d6d6d6;
 }
 
+/* ----------------- Comment Area ------------- */
+
+#comment_area {
+  background: #eeeeee;
+}
+#comment_area .region {
+  margin: 0 auto;
+  max-width: 960px;
+}
+#comment_area .block {
+  padding: 15px 2em;
+}
+#comment_area h2 {
+  font-size: 1.7em;
+}
 /* ----------------- Triptych ----------------- */
 
 #triptych-wrapper {
