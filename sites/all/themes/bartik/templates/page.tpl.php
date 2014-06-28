@@ -215,11 +215,12 @@
     <?php if ($page['footer']): ?>
       <div id="footer" class="clearfix">
         <?php print render($page['footer']); ?>
-        <a href="http://twitter.com/micahtredding" rel="me"><i class="fa fa-twitter"></i></a>
-        <a href="http://micahredding.com/curve">@</a>
-        <a href="https://plus.google.com/+MicahRedding?rel=author">+</a>
       </div> <!-- /#footer -->
     <?php endif; ?>
+
+    <a href="http://twitter.com/micahtredding" rel="me"><i class="fa fa-twitter"></i></a>
+    <a href="http://micahredding.com/curve">@</a>
+    <a href="https://plus.google.com/+MicahRedding?rel=author">+</a>
 
   </div></div> <!-- /.section, /#footer-wrapper -->
 
