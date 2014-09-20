@@ -218,10 +218,6 @@
       </div> <!-- /#footer -->
     <?php endif; ?>
 
-    <a href="http://twitter.com/micahtredding" rel="me"><i class="fa fa-twitter"></i></a>
-    <a href="http://micahredding.com/curve">@</a>
-    <a href="https://plus.google.com/+MicahRedding?rel=author">+</a>
-
   </div></div> <!-- /.section, /#footer-wrapper -->
 
 </div></div> <!-- /#page, /#page-wrapper -->

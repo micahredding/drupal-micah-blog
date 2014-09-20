@@ -1,21 +1,22 @@
-<?php 
+<?php
 
 function mr_links_node_view($node, $view_mode, $langcode) {
   $links = array();
-  if(context_isset('context','theology')) {
-    $href = 'http://micahredding.com/xn';
-  } else {
-    $href = 'http://micahredding.com/curve';
-  }
+  // if(context_isset('context','theology')) {
+  //   $href = 'http://micahredding.com/xn';
+  // } else {
+  //   $href = 'http://micahredding.com/curve';
+  // }
+  $href = 'http://micahredding.com/list'
 
   $links[] = array(
-      'title' => '• Get essays like this by email', 
+      'title' => '• Get essays like this by email',
       'href' => $href,
       'attributes' => array(
           'target'=>'_blank',
           'rel' => 'nofollow',
-       ),    
-  );  
+       ),
+  );
 
 
   $node->content['links']['mr'] = array(
