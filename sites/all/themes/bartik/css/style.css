@@ -475,10 +475,13 @@ ul.tips {
   padding: 0 10px;
 }
 #main-menu-links li {
-  display: block;
+  display: inline-block;
   list-style: none;
   padding: 0 1px;
   margin: 0 1px;
+}
+#main-menu-links li.menu-227 {
+  display: none;
 }
 @media (min-width: 800px) {
   #main-menu {
@@ -490,6 +493,9 @@ ul.tips {
     float: left;
   }
   #main-menu-links li {
+    display: inline-block;
+  }
+  #main-menu-links li.menu-227 {
     display: inline-block;
   }
   #main-menu-links a {
@@ -1780,3 +1786,5 @@ div.admin-panel .description {
 #block-mrblocks-mr-email-signup form input[type="submit"] {
   appearance: none;
 }
+
+
