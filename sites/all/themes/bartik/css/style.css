@@ -317,6 +317,7 @@ ul.tips {
 #site-name a {
   color: #eee;
   font-weight: normal;
+  font-size: 16px;
   padding: 10px;
 }
 #site-name a:hover {
@@ -500,6 +501,7 @@ ul.tips {
   }
   #main-menu-links a {
     display: inline-block;
+    font-size: 16px;
   }
 }
 
