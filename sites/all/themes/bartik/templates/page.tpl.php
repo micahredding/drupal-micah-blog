@@ -92,9 +92,9 @@
     <?php if ($site_name || $site_slogan): ?>
 
         <?php if ($site_name): ?>
-          <span id="site-name">
+          <div id="site-name">
               <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-          </span>
+          </div>
         <?php endif; ?>
 
     <?php endif; ?>
