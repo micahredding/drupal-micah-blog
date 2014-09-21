@@ -464,7 +464,7 @@ ul.tips {
 #main-menu-links {
   font-size: 0.929em;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 0;
 }
 #main-menu-links li {
   display: inline-block;
@@ -502,7 +502,7 @@ ul.tips {
 #main-menu-social {
   font-size: 0.929em;
   margin: 0;
-  padding: 10px 20px 6px;
+  padding: 10px 10px 10px;
 }
 #main-menu-social li {
   display: block;
