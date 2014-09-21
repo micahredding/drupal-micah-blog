@@ -472,6 +472,10 @@ ul.tips {
   padding: 0 1px;
   margin: 0 1px;
 }
+#main-menu-links a {
+  display: inline-block;
+  font-size: 16px;
+}
 #main-menu-links li.menu-227 {
   display: none;
 }
@@ -492,7 +496,6 @@ ul.tips {
   }
   #main-menu-links a {
     display: inline-block;
-    font-size: 16px;
   }
 }
 
