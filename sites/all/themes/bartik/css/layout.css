@@ -92,7 +92,8 @@ body.page-node.node-type-article.no-sidebars #content {
     width: 480px;
   }
   .no-sidebars #content {
-    width: 960px;
+    margin: 0 auto;
+    width: 800px;
     float: none;
   }
   #sidebar-first,
