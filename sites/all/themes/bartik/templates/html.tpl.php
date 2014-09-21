@@ -53,6 +53,8 @@
   <link rel="alternate" type="application/rss+xml" title="Micah Redding: life on the curve" href="http://micahredding.com/blog/rss.xml" />
   <link rel="shortcut icon" href="http://micahredding.com/favicon.ico">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "e35788fb-a972-463e-8098-029e47663c37", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
