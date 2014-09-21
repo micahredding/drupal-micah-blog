@@ -113,8 +113,6 @@
     <?php endif; ?>
 
     <ul id="main-menu-social">
-      <span class='st_twitter_hcount' displayText='Tweet'></span>
-      <span class='st_facebook_hcount' displayText='Facebook'></span>
       <li><?php print _prepare_contextual_tweet(); ?></li>
       <li><?php print _prepare_fb(); ?></li>
     </ul>
