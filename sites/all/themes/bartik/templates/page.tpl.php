@@ -87,17 +87,11 @@
 ?>
 <div id="page-wrapper"><div id="page">
 
-  <div id="header" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="">
+  <div id="header"><div>
 
-    <?php if ($site_name || $site_slogan): ?>
-
-        <?php if ($site_name): ?>
-          <div id="site-name">
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-          </div>
-        <?php endif; ?>
-
-    <?php endif; ?>
+    <div id="site-name">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+    </div>
 
     <?php print render($page['header']); ?>
 
