@@ -303,7 +303,6 @@ ul.tips {
 #site-name, #site-slogan {
   color: #eeeeee;
   display: inline-block;
-  padding: 10px;
 }
 @media(min-width: 800px) {
   #site-name, #site-slogan {
