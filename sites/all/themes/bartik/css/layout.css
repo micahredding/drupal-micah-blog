@@ -70,6 +70,10 @@ body.page-node.node-type-article.no-sidebars #content {
     margin-left: auto;
     margin-right: auto;
   }
+  #main {
+    width:800px;
+    max-width: 800px;
+  }
 
   #content,
   #sidebar-first,
