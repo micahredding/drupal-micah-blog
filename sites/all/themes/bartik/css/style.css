@@ -776,13 +776,15 @@ ul.links {
   margin-left: 0; /* LTR */
 }
 .comment {
+  background: #ffffff;
   margin-bottom: 20px;
-  display: table;
+  padding: 2em;
+/*  display: table;*/
   vertical-align: top;
 }
 .comment .attribution {
-  display: table-cell;
-  padding: 0 30px 0 0; /* LTR */
+/*  display: table-cell;*/
+  /*padding: 0 30px 0 0;*/ /* LTR */
   vertical-align: top;
   overflow: hidden;
 }
@@ -822,7 +824,7 @@ ul.links {
   width: 20px;*/
 }
 .comment .comment-text {
-  padding: 10px 25px;
+/*  padding: 10px 25px;*/
 /*  border: 1px solid #d3d7d9;*/
 /*  display: table-cell;*/
   vertical-align: top;
