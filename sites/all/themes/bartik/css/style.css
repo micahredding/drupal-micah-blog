@@ -776,13 +776,14 @@ ul.links {
   margin-left: 0; /* LTR */
 }
 .comment {
+  background: #ffffff;
   margin-bottom: 20px;
   padding: 2em;
 /*  display: table;*/
   vertical-align: top;
 }
-.comment-by-anonymous {
-  background: #ffffff;
+.comment-unpublished {
+  background: #fff4f4;
 }
 .comment .attribution {
 /*  display: table-cell;*/
