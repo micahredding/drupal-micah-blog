@@ -112,10 +112,9 @@
       </div> <!-- /#main-menu -->
     <?php endif; ?>
 
-    <ul id="main-menu-social">
-      <li><?php print _prepare_contextual_tweet(); ?></li>
-      <li><?php print _prepare_fb(); ?></li>
-    </ul>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="addthis_native_toolbox"></div>
+
 
   </div></div> <!-- /.section, /#header -->
 
