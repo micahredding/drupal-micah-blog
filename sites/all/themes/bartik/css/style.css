@@ -811,19 +811,20 @@ ul.links {
   line-height: 1.6;
 }
 .comment .comment-arrow {
-  background: url(../images/comment-arrow.gif) no-repeat 0 center transparent; /* LTR */
-  border-left: 1px solid;
+  display: none;
+  /*background: url(../images/comment-arrow.gif) no-repeat 0 center transparent;*/ /* LTR */
+/*  border-left: 1px solid;
   border-right: 1px solid;
   height: 40px;
-  margin-left: -47px; /* LTR */
-  margin-top: 10px;
+  margin-left: -47px;*/ /* LTR */
+/*  margin-top: 10px;
   position: absolute;
-  width: 20px;
+  width: 20px;*/
 }
 .comment .comment-text {
   padding: 10px 25px;
-  border: 1px solid #d3d7d9;
-  display: table-cell;
+/*  border: 1px solid #d3d7d9;*/
+/*  display: table-cell;*/
   vertical-align: top;
   position: relative;
   width: 100%;
