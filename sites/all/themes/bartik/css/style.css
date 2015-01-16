@@ -810,7 +810,7 @@ ul.links {
   font-size: 0.786em;
   text-transform: lowercase;
 }
-.comment .submitted .comment-name .username,
+.comment .submitted .commenter-name .username,
 .comment .submitted .comment-time,
 .comment .submitted .comment-permalink a {
   color: #999999;
