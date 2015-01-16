@@ -776,11 +776,13 @@ ul.links {
   margin-left: 0; /* LTR */
 }
 .comment {
-  background: #ffffff;
   margin-bottom: 20px;
   padding: 2em;
 /*  display: table;*/
   vertical-align: top;
+}
+.comment-by-anonymous {
+  background: #ffffff;
 }
 .comment .attribution {
 /*  display: table-cell;*/
@@ -807,6 +809,11 @@ ul.links {
 .comment .submitted .comment-permalink {
   font-size: 0.786em;
   text-transform: lowercase;
+}
+.comment .submitted .comment-name .username,
+.comment .submitted .comment-time,
+.comment .submitted .comment-permalink a {
+  color: #999999;
 }
 .comment .content {
   font-size: 0.929em;
