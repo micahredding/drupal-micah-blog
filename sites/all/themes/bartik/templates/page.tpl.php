@@ -113,7 +113,7 @@
     <?php endif; ?>
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <div class="addthis_sharing_toolbox"></div>
+    <div class="addthis_sharing_toolbox" style="position:absolute; top:8px; right: 0;"></div>
 
   </div></div> <!-- /.section, /#header -->
 
