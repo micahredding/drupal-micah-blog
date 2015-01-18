@@ -483,7 +483,7 @@ ul.tips {
 #main-menu-links li.menu-menu-3307 a {
   visibility: hidden;
 }
-#main-menu-links li.menu-menu-3307 a:before {
+#main-menu-links li.menu-3307 a:before {
   visibility: visible;
 }
 @media (min-width: 800px) {
@@ -497,7 +497,7 @@ ul.tips {
   #main-menu-links li.menu-227 {
     display: inline-block;
   }
-  #main-menu-links li.menu-menu-3307 a {
+  #main-menu-links li.menu-3307 a {
     visibility: visible;
   }
   #main-menu-links a {
