@@ -694,9 +694,11 @@ body.page-node.node-type-article .node .content {
 .node-teaser h2 a {
   color: #181818;
 }
-.node-teaser .field-type-image img {
-  float: left;
-  margin-right: 1em;
+@media (min-width: 800px) {
+  .node-teaser .field-type-image img {
+    float: left;
+    margin-right: 1em;
+  }
 }
 .node-teaser {
   border-bottom: 1px solid #d3d7d9;
