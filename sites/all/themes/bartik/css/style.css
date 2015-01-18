@@ -672,8 +672,8 @@ h1#page-title {
   line-height: 1;
 }
 #content h2 {
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 1.429em;
+  line-height: 1.4em;
 }
 body.no-sidebars.page-node.node-type-article .node .content,
 body.page-node.node-type-article .node .content {
@@ -688,6 +688,8 @@ body.page-node.node-type-article .node .content {
 .node-teaser h2 {
   margin-top: 0;
   padding-top: 0.5em;
+  font-size: 2em;
+  line-height: 1.5em;
 }
 .node-teaser h2 a {
   color: #181818;
