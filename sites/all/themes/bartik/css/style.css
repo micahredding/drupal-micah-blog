@@ -1066,10 +1066,10 @@ ul.links {
   text-decoration: none;
 }
 #footer li.first a {
-  padding-left: 0; /* LTR */
+/*  padding-left: 0;*/ /* LTR */
 }
 #footer li.last a {
-  padding-right: 0; /* LTR */
+/*  padding-right: 0;*/ /* LTR */
   border-right: none; /* LTR */
 }
 #footer-wrapper tr.odd {
