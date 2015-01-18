@@ -672,9 +672,8 @@ h1#page-title {
   line-height: 1;
 }
 #content h2 {
-  margin-bottom: 2px;
   font-size: 2em;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 body.no-sidebars.page-node.node-type-article .node .content,
 body.page-node.node-type-article .node .content {
@@ -759,6 +758,10 @@ body.page-node.node-type-article .node .content {
 .field-type-image img,
 .user-picture img {
   margin: 0 0 1em;
+}
+.field-type-image img {
+  max-width: 100%;
+  height: auto;
 }
 ul.links {
   color: #68696b;
