@@ -673,8 +673,8 @@ h1#page-title {
 }
 #content h2 {
   margin-bottom: 2px;
-  font-size: 1.429em;
-  line-height: 1.4;
+  font-size: 2em;
+  line-height: 2em;
 }
 body.no-sidebars.page-node.node-type-article .node .content,
 body.page-node.node-type-article .node .content {
@@ -684,7 +684,7 @@ body.page-node.node-type-article .node .content {
   font-size: 1.071em;
 }
 .node-teaser .content {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 .node-teaser h2 {
   margin-top: 0;
