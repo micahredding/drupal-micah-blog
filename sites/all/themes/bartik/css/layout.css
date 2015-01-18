@@ -21,7 +21,7 @@ body,
     z-index: 100;
   }
 }
-body.page-node.node-type-article.no-sidebars #content {
+body.page-node.node-type-article.no-sidebars #content, body.page-node.node-type-page.no-sidebars #content {
   display: block;
   margin: 0 auto;
   max-width: 700px;
