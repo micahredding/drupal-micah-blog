@@ -1485,9 +1485,12 @@ html.js input.throbbing {
   margin-bottom: 10px;
   overflow: hidden;
 }
+.comment-form #edit-notify-type {
+  margin-bottom: 10px;
+}
 .comment-form .form-type-checkbox,
 .comment-form .form-radios {
-  margin-left: 120px; /* LTR */
+  /*margin-left: 120px;*/ /* LTR */
 }
 .comment-form .form-type-checkbox label,
 .comment-form .form-radios label {
@@ -1509,7 +1512,7 @@ html.js input.throbbing {
 .comment-form .form-item .description {
   font-size: 0.786em;
   line-height: 1.2;
-  margin-left: 120px; /* LTR */
+  /*margin-left: 120px;*/ /* LTR */
 }
 #content h2.comment-form {
   margin-bottom: 0.5em;
