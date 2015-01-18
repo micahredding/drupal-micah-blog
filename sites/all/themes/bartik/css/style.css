@@ -1486,7 +1486,7 @@ html.js input.throbbing {
   overflow: hidden;
 }
 .comment-form #edit-notify-type {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .comment-form .form-type-checkbox,
 .comment-form .form-radios {
