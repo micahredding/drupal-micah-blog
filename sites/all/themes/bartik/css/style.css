@@ -675,8 +675,8 @@ h1#page-title {
   font-size: 1.429em;
   line-height: 1.4em;
 }
-body.no-sidebars.page-node.node-type-article .node .content,
-body.page-node.node-type-article .node .content {
+body.no-sidebars.page-node .node .content,
+body.page-node .node .content {
   font-size: 1.5em;
 }
 .node .content {
