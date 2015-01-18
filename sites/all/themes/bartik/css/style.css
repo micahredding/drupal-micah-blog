@@ -460,6 +460,7 @@ ul.tips {
 #main-menu {
 /*  clear: both;*/
 /*  margin-top: 10px;*/
+  display: inline-block;
 }
 #main-menu-links {
   font-size: 0.929em;
@@ -480,10 +481,6 @@ ul.tips {
   display: none;
 }
 @media (min-width: 800px) {
-  #main-menu {
-    display: inline-block;
-/*    float: left;*/
-  }
   #main-menu-links {
     display: inline-block;
 /*    float: left;*/
