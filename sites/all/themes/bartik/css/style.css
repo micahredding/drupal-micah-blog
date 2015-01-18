@@ -685,7 +685,7 @@ body.page-node.node-type-article .node .content {
 .node-teaser .content {
   font-size: 1.5em;
 }
-.node-teaser h2 {
+.node-teaser h2, #content .node-teaser h2 {
   margin-top: 0;
   padding-top: 0.5em;
   font-size: 2em;
