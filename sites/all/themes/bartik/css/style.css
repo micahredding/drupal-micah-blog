@@ -1056,10 +1056,14 @@ ul.links {
 }
 #footer li a {
   float: left; /* LTR */
-  padding: 0 12px;
+  padding: 12px;
   display: block;
   border-right: 1px solid #555; /* LTR */
   border-color: rgba(255, 255, 255, 0.15);
+}
+#footer li a:hover {
+  background: #333333;
+  text-decoration: none;
 }
 #footer li.first a {
   padding-left: 0; /* LTR */
