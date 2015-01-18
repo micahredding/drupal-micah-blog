@@ -694,7 +694,7 @@ body.page-node.node-type-article .node .content {
 .node-teaser h2 a {
   color: #181818;
 }
-@media (min-width: 800px) {
+@media (min-width: 640px) {
   .node-teaser .field-type-image img {
     float: left;
     margin-right: 1em;
