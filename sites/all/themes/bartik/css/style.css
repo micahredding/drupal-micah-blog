@@ -480,12 +480,12 @@ ul.tips {
 #main-menu-links li.menu-227 {
   display: none;
 }
-#main-menu-links li.menu-3307 a {
+/*#main-menu-links li.menu-3307 a {
   visibility: hidden;
 }
 #main-menu-links li.menu-3307 a:before {
   visibility: visible;
-}
+}*/
 @media (min-width: 800px) {
   #main-menu-links {
     display: inline-block;
@@ -497,9 +497,9 @@ ul.tips {
   #main-menu-links li.menu-227 {
     display: inline-block;
   }
-  #main-menu-links li.menu-3307 a {
+/*  #main-menu-links li.menu-3307 a {
     visibility: visible;
-  }
+  }*/
   #main-menu-links a {
     display: inline-block;
   }
