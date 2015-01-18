@@ -1493,7 +1493,6 @@ html.js input.throbbing {
   border-radius: 4px;
 }
 .comment-form input,
-.comment-form .form-select,
 .comment-form .form-textarea {
   font-size: 1.5em;
   line-height: 1.5em;
