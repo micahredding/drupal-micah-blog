@@ -895,7 +895,7 @@ ul.links {
 }
 #comment_area .region {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 720px;
 }
 #comment_area .block {
   padding: 15px 2em;
@@ -1463,9 +1463,9 @@ html.js input.throbbing {
 
 /* Comment form */
 .comment-form label {
-  float: left; /* LTR */
+  /*float: left;*/ /* LTR */
   font-size: 0.929em;
-  width: 120px;
+/*  width: 120px;*/
 }
 .comment-form input,
 .comment-form .form-select {
