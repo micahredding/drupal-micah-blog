@@ -309,6 +309,7 @@ ul.tips {
   display: inline-block;
   font-weight: normal;
   font-size: 16px;
+  text-transform: uppercase;
   padding: 10px 10px;
 }
 #site-name a:hover {
