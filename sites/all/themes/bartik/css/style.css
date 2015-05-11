@@ -683,12 +683,6 @@ body.page-taxonomy-term #content .region-content {
 .node .content {
   font-size: 1em;
 }
-.node-teaser h2, #content .node-teaser h2 {
-  margin-top: 0;
-  padding-top: 0.5em;
-  font-size: 2em;
-  line-height: 1.5em;
-}
 .node-teaser h2 a {
   color: #181818;
 }
@@ -705,18 +699,13 @@ body.page-taxonomy-term #content .region-content {
 }
 .node-sticky {
   background: #f9f9f9;
-  background: rgba(0, 0, 0, 0.024);
-  border: 1px solid #d3d7d9;
+  /*border: 1px solid #d3d7d9;*/
   padding: 0 15px 15px;
 }
 .node-full {
   background: none;
   border: none;
   padding: 0;
-}
-.node-teaser .content {
-  clear: none;
-  line-height: 1.6;
 }
 .meta {
   font-size: 0.857em;
