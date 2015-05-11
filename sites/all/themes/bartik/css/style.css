@@ -678,7 +678,8 @@ h1#page-title {
 }
 body.no-sidebars.page-node .node .content,
 body.page-node .node .content,
-body.page-taxonomy-term #content .region-content {
+body.page-taxonomy-term #content .region-content,
+.mr-grid {
   font-size: 1.5em;
 }
 .node .content {
