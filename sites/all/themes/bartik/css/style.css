@@ -681,7 +681,7 @@ body.page-taxonomy-term #content .region-content {
   font-size: 1.5em;
 }
 .node .content {
-  font-size: 1.071em;
+  font-size: 1em;
 }
 .node-teaser h2, #content .node-teaser h2 {
   margin-top: 0;
@@ -1829,5 +1829,5 @@ ul.mr-grid li {
 }
 
 .link-wrapper .links.inline {
-  font-size: 1em;
+  font-size: 0.6em;
 }
