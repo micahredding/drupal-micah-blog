@@ -683,9 +683,6 @@ body.page-taxonomy-term #content .region-content {
 .node .content {
   font-size: 1.071em;
 }
-.node-teaser .content {
-  font-size: 1.5em;
-}
 .node-teaser h2, #content .node-teaser h2 {
   margin-top: 0;
   padding-top: 0.5em;
@@ -1831,6 +1828,6 @@ ul.mr-grid li {
   vertical-align:top;
 }
 
-.link-wrapper .links-inline {
+.link-wrapper .links.inline {
   font-size: 1em;
 }
