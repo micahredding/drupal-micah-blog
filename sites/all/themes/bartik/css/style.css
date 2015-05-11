@@ -677,7 +677,8 @@ h1#page-title {
   line-height: 1.4em;
 }
 body.no-sidebars.page-node .node .content,
-body.page-node .node .content {
+body.page-node .node .content,
+body.page-taxonomy-term .content {
   font-size: 1.5em;
 }
 .node .content {
@@ -1820,4 +1821,13 @@ div.admin-panel .description {
   appearance: none;
 }
 
+ul.mr-grid {
+  padding-left: 0;
+}
+ul.mr-grid li {
+  display:inline-block;
+  max-width:210px;
+  vertical-align:top;
+  text-align:center;
+}
 

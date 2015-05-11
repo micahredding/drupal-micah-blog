@@ -33,7 +33,7 @@ body.page-node.node-type-article.no-sidebars #content, body.page-node.node-type-
   padding: 1em 15px;
 }
 
-#content .field-content img {
+#content article.node .field-content img {
   width: 100%;
   height: auto;
 }
